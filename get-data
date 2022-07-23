@@ -1,0 +1,151 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'httparty'
+require 'erb'
+require 'json'
+require 'csv'
+require 'optparse'
+
+BASE_URL = 'https://maps.nyc.gov/geoclient/v1/search.json?app_key=E2857975AA57366BC&app_id=nyc-gov-nypd&input=%s'
+DATA_URL = 'https://data.cityofnewyork.us/api/views/n2qu-9sgw/rows.json?accessType=DOWNLOAD'
+
+SOURCE_DATA_FILE = 'data/311data.json'
+PRECINCT_CACHE_FILE = 'data/precinct.json'
+RESOLUTION_SUMMARY_FILE = 'data/paperplates.csv'
+COUNTS_FILE = 'data/paperplates-counts.json'
+
+RESOLUTION_INDEX = 10
+STATUS_INDEX = 11
+ADDRESS_INDEX = 12
+CITY_INDEX = 13
+ZIP_INDEX = 14
+UNIQUE_KEY_INDEX = 20
+
+RESOLUTION_MAP = {
+  'The Police Department issued a summons in response to the complaint.' => 'Summons',
+  'The Police Department responded and upon arrival those responsible for the condition were gone.' => 'Gone',
+  'The Police Department responded to the complaint and a report was prepared.' => 'Report',
+  'The Police Department responded to the complaint and determined that police action was not necessary.' => 'Action not necessary',
+  'The Police Department responded to the complaint and took action to fix the condition.' => 'Took action',
+  'The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.' => 'Found no violation',
+  'The Police Department reviewed your complaint and provided additional information below.' => 'Provided information',
+  'This complaint does not fall under the Police Department\'s jurisdiction.' => 'Jurisdiction',
+  'Your request can not be processed at this time because of insufficient contact information. Please create a new Service Request on NYC.gov and provide more detailed contact information.' => 'Contact Info'
+}.freeze
+
+RESOLUTION_SUMMARY_MAP = {
+  'The Police Department issued a summons in response to the complaint.' => 'Summons',
+  'The Police Department responded and upon arrival those responsible for the condition were gone.' => 'No action',
+  'The Police Department responded to the complaint and a report was prepared.' => 'Something',
+  'The Police Department responded to the complaint and determined that police action was not necessary.' => 'No action',
+  'The Police Department responded to the complaint and took action to fix the condition.' => 'Something',
+  'The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.' => 'No action',
+  'The Police Department reviewed your complaint and provided additional information below.' => 'No action',
+  'This complaint does not fall under the Police Department\'s jurisdiction.' => 'No action',
+  'Your request can not be processed at this time because of insufficient contact information. Please create a new Service Request on NYC.gov and provide more detailed contact information.' => 'No action'
+}.freeze
+
+# rubocop:enable Layout/LineLength
+
+def fetch_source_data
+  puts 'fetching from 311'
+  data = HTTParty.get(DATA_URL)
+  File.write(SOURCE_DATA_FILE, data)
+  puts "Cached source 311 data to #{SOURCE_DATA_FILE}"
+  data
+end
+
+def load_cached_source_data
+  JSON.parse(File.read(SOURCE_DATA_FILE))
+end
+
+def load_precinct_cache
+  if File.exist?(PRECINCT_CACHE_FILE)
+    JSON.parse(File.read(PRECINCT_CACHE_FILE))
+  else
+    {}
+  end
+end
+
+def save_precinct_cache(data)
+  File.write(PRECINCT_CACHE_FILE, JSON.generate(data))
+end
+
+def get_precinct_data(address, zip, cache)
+  if cache.key?(zip) && cache[zip].key?(address)
+    sector = cache[zip][address]
+    # puts "cache: #{address} #{zip} --> #{sector}"
+    return sector
+  end
+
+  location = ERB::Util.url_encode("#{address} #{zip}")
+  url = BASE_URL % location
+  result = HTTParty.get(url)
+  cache[zip] = {} unless cache.key?(zip)
+  begin
+    sector = result['results'][0]['response']['policeSector']
+    puts "fetched: #{address} #{zip} --> #{sector}"
+  rescue NoMethodError
+    puts "Failed to find sector for #{address} #{zip}"
+    sector = -1
+  end
+  cache[zip][address] = sector
+  sector
+end
+
+def write_counts(data)
+  File.write(COUNTS_FILE, JSON.generate(data))
+end
+
+def process_data(data)
+  cache = load_precinct_cache
+  resolution_counts = {}
+
+  CSV.open(RESOLUTION_SUMMARY_FILE, 'w') do |csv|
+    data['data'].each do |item|
+      sector = get_precinct_data(item[ADDRESS_INDEX], item[ZIP_INDEX], cache)
+
+      resolution = RESOLUTION_MAP.key?(item[RESOLUTION_INDEX]) ? RESOLUTION_MAP[item[RESOLUTION_INDEX]] : item[RESOLUTION_INDEX] # rubocop:disable Layout/LineLength
+      resolution_summary = RESOLUTION_SUMMARY_MAP.key?(item[RESOLUTION_INDEX]) ? RESOLUTION_SUMMARY_MAP[item[RESOLUTION_INDEX]] : item[RESOLUTION_INDEX] # rubocop:disable Layout/LineLength
+      csv << [sector.to_i, resolution_summary, resolution] if sector != -1
+      next if resolution.nil?
+
+      resolution_counts[resolution] = 1 unless resolution_counts.key?(resolution)
+      resolution_counts[resolution] += 1
+    end
+  end
+
+  resolution_counts = resolution_counts.sort_by { |_key, value| value }.reverse.to_h
+  write_counts(resolution_counts)
+
+  save_precinct_cache(cache)
+
+  template = ERB.new(File.read('template.html.erb'), trim_mode: '-')
+  @last_updated = Time.new.strftime('%A, %B %e, %Y at %l:%M %p %Z')
+  @total_complaints = data['data'].size
+  @total_summonses = resolution_counts['Summons']
+  @tbody = resolution_counts
+
+  File.write('index.html', template.result)
+end
+
+if __FILE__ == $PROGRAM_NAME
+  options = {}
+  OptionParser.new do |opt|
+    opt.banner = format('Usage: %s [options]', $PROGRAM_NAME)
+
+    opt.on('--fetch', 'Get updated data from 311') { |o| options[:fetch] = o }
+
+    opt.on_tail('-h', '--help', 'Show this message') do
+      puts opt
+      exit
+    end
+  end.parse!
+
+  fetch = !options[:fetch].nil?
+
+  data = fetch ? fetch_source_data : load_cached_source_data
+  process_data(data)
+
+end
