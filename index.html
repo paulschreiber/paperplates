@@ -35,7 +35,7 @@
 			text-align: left;
 			white-space: nowrap;
 		}
-		td, .coount {
+		td, th.count {
 			padding-left: 2em;
 		}
 		.number {
@@ -63,6 +63,12 @@
 			margin-bottom: 3rem;
 		}
 		@media screen and (max-width: 850px) {
+			.bar {
+				display: none;
+			}
+			.number {
+				font-size: 55vw;
+			}
 			.summary {
 				flex-direction: column;
 			}
@@ -91,53 +97,53 @@
 			<thead>
 				<tr>
 					<th>Resolution</th>
-					<th class="coount">Count</th>
+					<th class="count">Count</th>
 				</tr>
 			</thead>
 			<tbody>
 					<tr>
 						<th>Took action</th>
-						<td>175</td>
+						<td class="count">175</td>
 						<td><div class="bar" style="width: 145px"></div>
 					</tr>
 					<tr>
 						<th>Found no violation</th>
-						<td>131</td>
+						<td class="count">131</td>
 						<td><div class="bar" style="width: 110px"></div>
 					</tr>
 					<tr>
 						<th>Action not necessary</th>
-						<td>117</td>
+						<td class="count">117</td>
 						<td><div class="bar" style="width: 95px"></div>
 					</tr>
 					<tr>
 						<th>Summons</th>
-						<td>65</td>
+						<td class="count">65</td>
 						<td><div class="bar" style="width: 55px"></div>
 					</tr>
 					<tr>
 						<th>Gone</th>
-						<td>63</td>
+						<td class="count">63</td>
 						<td><div class="bar" style="width: 50px"></div>
 					</tr>
 					<tr>
 						<th>Jurisdiction</th>
-						<td>27</td>
+						<td class="count">27</td>
 						<td><div class="bar" style="width: 20px"></div>
 					</tr>
 					<tr>
 						<th>Provided information</th>
-						<td>23</td>
+						<td class="count">23</td>
 						<td><div class="bar" style="width: 20px"></div>
 					</tr>
 					<tr>
 						<th>Report</th>
-						<td>5</td>
+						<td class="count">5</td>
 						<td><div class="bar" style="width: 5px"></div>
 					</tr>
 					<tr>
 						<th>Contact Info</th>
-						<td>3</td>
+						<td class="count">3</td>
 						<td><div class="bar" style="width: 0px"></div>
 					</tr>
 			</tbody>
@@ -151,7 +157,7 @@
 			</blockquote>
 		</p>
 
-	  <p>The NYPD is <a href="https://www1.nyc.gov/office-of-the-mayor/news/475-22/transcript-mayor-eric-adams-crackdown-vehicles-illegal-license-plates">cracking down on fraudulent paper license plates</a>. How are they doing? <a href="https://data.cityofnewyork.us/Social-Services/Paper-License-Plates/n2qu-9sgw/data">Data from NYC 311</a>. Spot a paper plate? <a href="https://portal.311.nyc.gov/article/?kanumber=KA-03492">Report it to 311</a>. Last updated: Sunday, July 24, 2022 at  3:23 PM EDT.</p>
+	  <p>The NYPD is <a href="https://www1.nyc.gov/office-of-the-mayor/news/475-22/transcript-mayor-eric-adams-crackdown-vehicles-illegal-license-plates">cracking down on fraudulent paper license plates</a>. How are they doing? <a href="https://data.cityofnewyork.us/Social-Services/Paper-License-Plates/n2qu-9sgw/data">Data from NYC 311</a>. Spot a paper plate? <a href="https://portal.311.nyc.gov/article/?kanumber=KA-03492">Report it to 311</a>. Last updated: Sunday, July 24, 2022 at  3:35 PM EDT.</p>
 	</section>
 
 	</body>
