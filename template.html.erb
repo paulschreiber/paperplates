@@ -35,7 +35,7 @@
 			text-align: left;
 			white-space: nowrap;
 		}
-		td, .coount {
+		td, th.count {
 			padding-left: 2em;
 		}
 		.number {
@@ -63,6 +63,12 @@
 			margin-bottom: 3rem;
 		}
 		@media screen and (max-width: 850px) {
+			.bar {
+				display: none;
+			}
+			.number {
+				font-size: 55vw;
+			}
 			.summary {
 				flex-direction: column;
 			}
@@ -91,7 +97,7 @@
 			<thead>
 				<tr>
 					<th>Resolution</th>
-					<th class="coount">Count</th>
+					<th class="count">Count</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -101,7 +107,7 @@
 				-%>
 					<tr>
 						<th><%= label %></th>
-						<td><%= count %></td>
+						<td class="count"><%= count %></td>
 						<td><div class="bar" style="width: <%= bar_width %>px"></div>
 					</tr>
 				<%- end -%>
