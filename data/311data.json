@@ -10,7 +10,7 @@
       "createdAt" : 1658149591,
       "description" : "<b>  NOTE: This data does not present a full picture of 311 calls or service requests, in part because of operational and system complexities associated with remote call taking necessitated by the unprecedented volume 311 is handling during the Covid-19 crisis. The City is working to address this issue. </b>\n<p>\nAll 311 Service Requests from 2010 to present. This information is automatically updated daily.\n</p>",
       "displayType" : "table",
-      "downloadCount" : 16,
+      "downloadCount" : 18,
       "hideFromCatalog" : true,
       "hideFromDataJson" : true,
       "newBackend" : true,
@@ -27,7 +27,7 @@
       "rowsUpdatedBy" : "5fuc-pqz2",
       "tableId" : 15047182,
       "totalTimesRated" : 0,
-      "viewCount" : 23,
+      "viewCount" : 24,
       "viewLastModified" : 1658150057,
       "viewType" : "tabular",
       "approvals" : [ {
