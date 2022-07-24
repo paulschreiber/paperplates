@@ -1,15 +1,19 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en-US">
 
 <head>
+	<%-
+	percent = (@total_summonses/@total_complaints.to_f * 100).round
+	description = "Follow along as the NYPD cracks down on illegal paper license plates. Summons data: #{@total_summonses}/#{@total_complaints} (#{percent}%)"
+	-%>
 	<meta charset="utf-8">
 	<title>NYPD paper license plate crackdown</title>
-	<meta name="description" content="Follow along as the NYPD cracks down on illegal paper license plates.">
+	<meta name="description" content="<%= description %>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta property="twitter:card" content="summary">
 	<meta property="og:title" content="NYPD paper license plate crackdown">
-	<meta property="og:description" content="Follow along as the NYPD cracks down on illegal paper license plates.">
+	<meta property="og:description" content="<%= description %>">
 	<meta property="og:image" content="https://paperplates.nyc/images/share.jpg">
 	<meta property="og:url" content="https://paperplates.nyc/">
 	<meta property="og:type" content="website">
