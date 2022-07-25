@@ -24,13 +24,46 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 		gtag('config', 'G-0EQQ502ZXG');
+		window.paperplates = <%= JSON.pretty_generate(@resolution_counts) %>;
+		document.addEventListener('DOMContentLoaded', function() {
+			document.getElementById('precinct').addEventListener('change', function(e) {
+				const newData = window.paperplates[e.target.value];
+				const dataRows = document.getElementById('data');
+				dataRows.replaceChildren();
+
+				for (const [label, count] of Object.entries(newData)) {
+					const newRow = document.createElement('tr');
+					const total = Object.values(newData).reduce((a, b) => a + b);
+					const barWidth = Math.round(count/total * 100) * 5;
+
+					const headerCell = document.createElement('th');
+					headerCell.textContent = label;
+
+					const countCell = document.createElement('td');
+					countCell.setAttribute('class', 'count');
+					countCell.textContent = count;
+
+					const barDiv = document.createElement('div');
+					barDiv.setAttribute('class', 'bar');
+					barDiv.setAttribute('style', `width: ${barWidth}px`);
+
+					const barCell = document.createElement('td');
+					barCell.appendChild(barDiv);
+
+					newRow.appendChild(headerCell);
+					newRow.appendChild(countCell);
+					newRow.appendChild(barCell);
+					dataRows.appendChild(newRow);
+				}
+			});
+    });
 	</script>
 	<style>
 		.summary {
 			display: flex;
 			justify-content: space-between;
 		}
-		h1, .item {
+		h1, .item, .form {
 			text-align: center;
 		}
 		p {
@@ -114,7 +147,7 @@
 					<th class="count">Count</th>
 				</tr>
 			</thead>
-			<tbody>
+			<tbody id="data">
 				<%- @tbody.each do |label, count| -%>
 				<%-
 					bar_width = (count/@total_complaints.to_f * 100 ).round * 5
@@ -127,6 +160,11 @@
 				<%- end -%>
 			</tbody>
 		</table>
+		<p class="form">Data for precinct <select id="precinct">
+			<%- @resolution_counts.keys.sort_by { |key, value| key.to_i }.each do |p| -%>
+				<option><%= p %></option>
+			<%- end -%>
+			</select></p>
 	</section>
 
 	<section>

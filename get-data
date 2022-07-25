@@ -85,9 +85,9 @@ def get_precinct_data(address, zip, cache)
   cache[zip] = {} unless cache.key?(zip)
   begin
     sector = result['results'][0]['response']['policeSector']
-    puts "fetched: #{address} #{zip} --> #{sector}"
+    # puts "fetched: #{address} #{zip} --> #{sector}"
   rescue NoMethodError
-    puts "Failed to find sector for #{address} #{zip}"
+    # puts "Failed to find sector for #{address} #{zip}"
     sector = -1
   end
   cache[zip][address] = sector
@@ -100,32 +100,39 @@ end
 
 def process_data(data)
   cache = load_precinct_cache
-  resolution_counts = {}
+  @resolution_counts = {}
 
   CSV.open(RESOLUTION_SUMMARY_FILE, 'w') do |csv|
     data['data'].each do |item|
       sector = get_precinct_data(item[ADDRESS_INDEX], item[ZIP_INDEX], cache)
+      precinct = sector == -1 ? 'Unknown' : sector.to_i
 
       resolution = RESOLUTION_MAP.key?(item[RESOLUTION_INDEX]) ? RESOLUTION_MAP[item[RESOLUTION_INDEX]] : item[RESOLUTION_INDEX] # rubocop:disable Layout/LineLength
       resolution_summary = RESOLUTION_SUMMARY_MAP.key?(item[RESOLUTION_INDEX]) ? RESOLUTION_SUMMARY_MAP[item[RESOLUTION_INDEX]] : item[RESOLUTION_INDEX] # rubocop:disable Layout/LineLength
       csv << [sector.to_i, resolution_summary, resolution] if sector != -1
       next if resolution.nil?
 
-      resolution_counts[resolution] = 1 unless resolution_counts.key?(resolution)
-      resolution_counts[resolution] += 1
+      @resolution_counts['all'] = {} unless @resolution_counts.key?('all')
+      @resolution_counts['all'][resolution] = 1 unless @resolution_counts['all'].key?(resolution)
+      @resolution_counts[precinct] = {} unless @resolution_counts.key?(precinct)
+      @resolution_counts[precinct][resolution] = 1 unless @resolution_counts[precinct].key?(resolution)
+      @resolution_counts['all'][resolution] += 1
+      @resolution_counts[precinct][resolution] += 1
     end
   end
 
-  resolution_counts = resolution_counts.sort_by { |_key, value| value }.reverse.to_h
-  write_counts(resolution_counts)
+  @resolution_counts.keys.each do |k|
+    @resolution_counts[k] = @resolution_counts[k].sort_by { |_key, value| value }.reverse.to_h
+  end
+  write_counts(@resolution_counts)
 
   save_precinct_cache(cache)
 
   template = ERB.new(File.read('template.html.erb'), trim_mode: '-')
   @last_updated = Time.new.strftime('%A, %B %e, %Y at %l:%M %p %Z')
   @total_complaints = data['data'].size
-  @total_summonses = resolution_counts['Summons']
-  @tbody = resolution_counts
+  @total_summonses = @resolution_counts['all']['Summons']
+  @tbody = @resolution_counts['all']
 
   File.write('index.html', template.result)
 end
