@@ -113,9 +113,9 @@ def process_data(data)
       next if resolution.nil?
 
       @resolution_counts['all'] = {} unless @resolution_counts.key?('all')
-      @resolution_counts['all'][resolution] = 1 unless @resolution_counts['all'].key?(resolution)
+      @resolution_counts['all'][resolution] = 0 unless @resolution_counts['all'].key?(resolution)
       @resolution_counts[precinct] = {} unless @resolution_counts.key?(precinct)
-      @resolution_counts[precinct][resolution] = 1 unless @resolution_counts[precinct].key?(resolution)
+      @resolution_counts[precinct][resolution] = 0 unless @resolution_counts[precinct].key?(resolution)
       @resolution_counts['all'][resolution] += 1
       @resolution_counts[precinct][resolution] += 1
     end
