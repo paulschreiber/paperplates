@@ -56,6 +56,8 @@
 					newRow.appendChild(barCell);
 					dataRows.appendChild(newRow);
 				}
+				document.getElementById('complaints').textContent = total;
+				document.getElementById('summonses').textContent = newData.Summons || 0;
 			});
     });
 	</script>
@@ -130,11 +132,11 @@
 	<section>
 		<div class="summary">
 			<div class="item">
-			<p><span class="number"><%= @total_complaints %></span>
+			<p><span class="number" id="complaints"><%= @total_complaints %></span>
 			<br />complaints filed</p>
 			</div>
 			<div class="item">
-			<p><span class="number"><%= @total_summonses %></span>
+			<p><span class="number" id="summonses"><%= @total_summonses %></span>
 				<br />summonses issued</p>
 			</div>
 		</div>
