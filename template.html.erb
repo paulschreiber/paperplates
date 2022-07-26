@@ -31,9 +31,10 @@
 				const dataRows = document.getElementById('data');
 				dataRows.replaceChildren();
 
+				const total = Object.values(newData).reduce((a, b) => a + b);
+
 				for (const [label, count] of Object.entries(newData)) {
 					const newRow = document.createElement('tr');
-					const total = Object.values(newData).reduce((a, b) => a + b);
 					const barWidth = Math.round(count/total * 100) * 5;
 
 					const headerCell = document.createElement('th');
