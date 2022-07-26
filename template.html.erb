@@ -25,40 +25,49 @@
 		gtag('js', new Date());
 		gtag('config', 'G-0EQQ502ZXG');
 		window.paperplates = <%= JSON.pretty_generate(@resolution_counts) %>;
+		function showDataForPrecinct(precinct) {
+			const newData = window.paperplates[precinct];
+			const dataRows = document.getElementById('data');
+			dataRows.replaceChildren();
+
+			const total = Object.values(newData).reduce((a, b) => a + b);
+
+			for (const [label, count] of Object.entries(newData)) {
+				const newRow = document.createElement('tr');
+				const barWidth = Math.round(count/total * 100) * 5;
+
+				const headerCell = document.createElement('th');
+				headerCell.textContent = label;
+
+				const countCell = document.createElement('td');
+				countCell.setAttribute('class', 'count');
+				countCell.textContent = count;
+
+				const barDiv = document.createElement('div');
+				barDiv.setAttribute('class', 'bar');
+				barDiv.setAttribute('style', `width: ${barWidth}px`);
+
+				const barCell = document.createElement('td');
+				barCell.appendChild(barDiv);
+
+				newRow.appendChild(headerCell);
+				newRow.appendChild(countCell);
+				newRow.appendChild(barCell);
+				dataRows.appendChild(newRow);
+			}
+			document.getElementById('complaints').textContent = total;
+			document.getElementById('summonses').textContent = newData.Summons || 0;
+			window.location.hash = precinct;
+		}
 		document.addEventListener('DOMContentLoaded', function() {
 			document.getElementById('precinct').addEventListener('change', function(e) {
-				const newData = window.paperplates[e.target.value];
-				const dataRows = document.getElementById('data');
-				dataRows.replaceChildren();
-
-				const total = Object.values(newData).reduce((a, b) => a + b);
-
-				for (const [label, count] of Object.entries(newData)) {
-					const newRow = document.createElement('tr');
-					const barWidth = Math.round(count/total * 100) * 5;
-
-					const headerCell = document.createElement('th');
-					headerCell.textContent = label;
-
-					const countCell = document.createElement('td');
-					countCell.setAttribute('class', 'count');
-					countCell.textContent = count;
-
-					const barDiv = document.createElement('div');
-					barDiv.setAttribute('class', 'bar');
-					barDiv.setAttribute('style', `width: ${barWidth}px`);
-
-					const barCell = document.createElement('td');
-					barCell.appendChild(barDiv);
-
-					newRow.appendChild(headerCell);
-					newRow.appendChild(countCell);
-					newRow.appendChild(barCell);
-					dataRows.appendChild(newRow);
-				}
-				document.getElementById('complaints').textContent = total;
-				document.getElementById('summonses').textContent = newData.Summons || 0;
+				showDataForPrecinct(e.target.value);
 			});
+			if (window.location.hash) {
+				const precinct = window.location.hash.substr(1);
+				showDataForPrecinct(precinct);
+				document.getElementById('precinct').value = precinct;
+			}
     });
 	</script>
 	<style>
