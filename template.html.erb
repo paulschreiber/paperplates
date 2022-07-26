@@ -92,8 +92,10 @@
 			background: blue;
 			height: 1em;
 		}
-		blockquote {
+		blockquote, .form, select {
 			font-size: 1.5rem;
+		}
+		blockquote {
 			line-height: 2rem;
 			text-indent: -0.5rem;
 			margin-left: 0;
@@ -143,6 +145,13 @@
 	</section>
 
 	<section>
+		<p class="form">Precinct: <select id="precinct">
+			<%- @resolution_counts.keys.sort_by { |key, value| key.to_i }.each do |p| -%>
+				<option><%= p %></option>
+			<%- end -%>
+			</select>
+		</p>
+
 		<table>
 			<thead>
 				<tr>
@@ -163,11 +172,6 @@
 				<%- end -%>
 			</tbody>
 		</table>
-		<p class="form">Data for precinct <select id="precinct">
-			<%- @resolution_counts.keys.sort_by { |key, value| key.to_i }.each do |p| -%>
-				<option><%= p %></option>
-			<%- end -%>
-			</select></p>
 	</section>
 
 	<section>
