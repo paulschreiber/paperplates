@@ -130,7 +130,10 @@ def process_data(data)
 
   template = ERB.new(File.read('template.html.erb'), trim_mode: '-')
   @last_updated = Time.new.strftime('%A, %B %e, %Y at %l:%M %p %Z')
-  @total_complaints = data['data'].size
+  @total_complaints = 0
+  @resolution_counts.keys.reject{|key| key == "all"}.each do |key|
+    @total_complaints += @resolution_counts[key].values.sum
+  end
   @total_summonses = @resolution_counts['all']['Summons']
   @tbody = @resolution_counts['all']
 
