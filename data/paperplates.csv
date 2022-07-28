@@ -520,7 +520,6 @@
 34,No action,Provided information
 63,Something,Took action
 50,No action,Action not necessary
-109,,
 102,Something,Took action
 122,No action,Action not necessary
 73,No action,Found no violation
@@ -541,7 +540,7 @@
 18,No action,Action not necessary
 72,Something,Took action
 106,Something,Took action
-106,,
+106,No action,Provided information
 46,No action,Found no violation
 79,No action,Jurisdiction
 120,No action,Found no violation
@@ -550,6 +549,7 @@
 79,No action,Contact Info
 68,Something,Took action
 46,No action,Provided information
+109,Something,Took action
 111,Something,Took action
 105,No action,Found no violation
 44,No action,Found no violation
@@ -583,8 +583,44 @@
 115,No action,Action not necessary
 110,No action,Found no violation
 50,Something,Took action
+75,No action,Jurisdiction
+78,Something,Took action
+63,No action,Jurisdiction
+43,No action,Action not necessary
+50,No action,Gone
+63,Something,Took action
+49,Something,Took action
+52,Something,Took action
 46,No action,Found no violation
+106,No action,Action not necessary
+78,Something,Took action
 50,Something,Took action
+49,No action,Found no violation
+78,No action,Jurisdiction
+44,No action,Found no violation
+49,Something,Took action
+112,Something,Took action
+72,Something,Took action
+122,Summons,Summons
+32,Something,Took action
+40,Something,Took action
+60,No action,Gone
+18,No action,Found no violation
+63,Something,Took action
+70,No action,Action not necessary
+113,Something,Took action
+110,No action,Gone
+50,No action,Provided information
+70,No action,Found no violation
+72,No action,Action not necessary
+52,No action,Gone
+63,Something,Took action
+110,No action,Found no violation
+50,Something,Took action
+63,Something,Took action
+79,No action,Contact Info
+42,Summons,Summons
+72,No action,Gone
 33,No action,Action not necessary
 109,Summons,Summons
 33,No action,Action not necessary
