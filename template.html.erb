@@ -118,7 +118,7 @@
 			text-align: left;
 			white-space: nowrap;
 		}
-		td, th.count {
+		td, th.count, th.bar-count {
 			padding-left: 2em;
 		}
 		.number {
@@ -164,7 +164,8 @@
 				font-size: 4vw;
 				line-height: 5vw;
 			}
-			.bar {
+			#compare-precincts .count,
+			#per-precinct .bar {
 				display: none;
 			}
 			.number {
@@ -173,6 +174,10 @@
 			}
 			.summary {
 				flex-direction: column;
+			}
+			.switch + .switch {
+				margin-left: 0;
+				margin-top: 1em;
 			}
 		}
 	</style>
@@ -235,7 +240,7 @@
 				<tr>
 					<th>Precinct</th>
 					<th class="count">Complaints</th>
-					<th class="count">Percent Summonsed</th>
+					<th class="bar-count">Percent Summonsed</th>
 				</tr>
 			</thead>
 			<tbody id="data">
