@@ -1,0 +1,94 @@
+.summary {
+	display: flex;
+	justify-content: space-between;
+}
+h1, .item, .form {
+	text-align: center;
+}
+p {
+	line-height: 1.5;
+}
+.toggle {
+	text-align: center;
+}
+.toggle button {
+	padding: 0.5em 2em;
+	border-radius: 1em;
+	background-color: cornflowerblue;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+.toggle button[disabled="disabled"] {
+	opacity: 0.5;
+}
+table {
+	margin: 0 auto;
+	width: 50%;
+}
+th {
+	text-align: left;
+	white-space: nowrap;
+}
+td, th.count, th.bar-count {
+	padding-left: 2em;
+}
+.number {
+	font-size: 15rem;
+	font-weight: 600;
+	line-height: 13rem;
+}
+.bar, .bar-label {
+	display: inherit;
+	font-weight: bold;
+	padding-left: 0.2em;
+	height: 1.2em;
+}
+.bar {
+	background: cornflowerblue;
+	color: white;
+}
+blockquote, .form, select, .toggle button {
+	font-size: 1.5rem;
+}
+blockquote {
+	line-height: 2rem;
+	text-indent: -0.5rem;
+	margin-left: 0;
+}
+body {
+	font-family: sans-serif;
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+section {
+	margin-bottom: 3rem;
+}
+.switch + .switch {
+	margin-left: 1em;
+}
+.hidden {
+	display: none;
+}
+@media screen and (max-width: 850px) {
+	p, td, th {
+		font-size: 4vw;
+		line-height: 5vw;
+	}
+	#compare-precincts .count,
+	#per-precinct .bar {
+		display: none;
+	}
+	.number {
+		font-size: 55vw;
+		line-height: 45vw;
+	}
+	.summary {
+		flex-direction: column;
+	}
+	.switch + .switch {
+		margin-left: 0;
+		margin-top: 1em;
+	}
+}
