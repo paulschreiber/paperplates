@@ -31,9 +31,9 @@
 			const dataRows = document.getElementById('data');
 			dataRows.replaceChildren();
 
-			const total = Object.values(newData).reduce((a, b) => a + b);
+			const total = newData.total;
 
-			for (const [label, count] of Object.entries(newData)) {
+			for (const [label, count] of Object.entries(newData.data)) {
 				const newRow = document.createElement('tr');
 				const barWidth = Math.round(count/total * 100) * 5;
 
@@ -57,8 +57,19 @@
 				dataRows.appendChild(newRow);
 			}
 			document.getElementById('complaints').textContent = total;
-			document.getElementById('summonses').textContent = newData.Summons || 0;
+			document.getElementById('summonses').textContent = newData.data.Summons || 0;
 			window.location.hash = precinct;
+		}
+		function toggleSectionDisplay() {
+			document.querySelectorAll('.data-section').forEach( function(item) {
+				item.classList.add('hidden');
+			});
+			const itemId = this.getAttribute('id').substr(4);
+			document.getElementById(itemId).classList.remove('hidden');
+			document.querySelectorAll('.switch').forEach( function(item) {
+				item.removeAttribute('disabled');
+			});
+			this.setAttribute('disabled', 'disabled');
 		}
 		document.addEventListener('DOMContentLoaded', function() {
 			document.getElementById('precinct').addEventListener('change', function(e) {
@@ -69,6 +80,9 @@
 				showDataForPrecinct(precinct);
 				document.getElementById('precinct').value = precinct;
 			}
+			document.querySelectorAll('.switch').forEach( function(item) {
+				item.addEventListener('click', toggleSectionDisplay);
+			});
     });
 	</script>
 	<style>
@@ -81,6 +95,20 @@
 		}
 		p {
 			line-height: 1.5;
+		}
+		.toggle {
+			text-align: center;
+		}
+		.toggle button {
+			padding: 0.5em 2em;
+			border-radius: 1em;
+			background-color: cornflowerblue;
+			color: white;
+			border: none;
+			cursor: pointer;
+		}
+		.toggle button[disabled="disabled"] {
+			opacity: 0.5;
 		}
 		table {
 			margin: 0 auto;
@@ -98,11 +126,17 @@
 			font-weight: 600;
 			line-height: 13rem;
 		}
-		.bar {
-			background: blue;
-			height: 1em;
+		.bar, .bar-label {
+			display: inherit;
+			font-weight: bold;
+			padding-left: 0.2em;
+			height: 1.2em;
 		}
-		blockquote, .form, select {
+		.bar {
+			background: cornflowerblue;
+			color: white;
+		}
+		blockquote, .form, select, .toggle button {
 			font-size: 1.5rem;
 		}
 		blockquote {
@@ -118,6 +152,12 @@
 		}
 		section {
 			margin-bottom: 3rem;
+		}
+		.switch + .switch {
+			margin-left: 1em;
+		}
+		.hidden {
+			display: none;
 		}
 		@media screen and (max-width: 850px) {
 			p, td, th {
@@ -154,7 +194,12 @@
 		</div>
 	</section>
 
-	<section>
+	<section class="toggle">
+		<button class="switch" id="btn-per-precinct" disabled="disabled">Specific Precinct</button>
+		<button class="switch" id="btn-compare-precincts">Compare Precincts</button>
+	</section>
+
+	<section id="per-precinct" class="data-section">
 		<p class="form">Precinct: <select id="precinct">
 			<%- @resolution_counts.keys.sort_by { |key, value| key.to_i }.each do |p| -%>
 				<option><%= p %></option>
@@ -178,6 +223,38 @@
 						<th><%= label %></th>
 						<td class="count"><%= count %></td>
 						<td><div class="bar" style="width: <%= bar_width %>px"></div>
+					</tr>
+				<%- end -%>
+			</tbody>
+		</table>
+	</section>
+
+	<section id="compare-precincts" class="hidden data-section">
+		<table>
+			<thead>
+				<tr>
+					<th>Precinct</th>
+					<th class="count">Complaints</th>
+					<th class="count">Percent Summonsed</th>
+				</tr>
+			</thead>
+			<tbody id="data">
+				<%- @resolution_counts.sort_by do |key, value|
+					[-value['percent'], key.to_i]
+				end.each do |label, count| -%>
+				<%-
+					next if ['all', 'Unknown'].include?(label)
+					summonses = count['data']['Summons'] || 0
+					bar_width = count['percent'] * 2
+				-%>
+					<tr>
+						<th><%= label %></th>
+						<td class="count"><%= count['total'] %></td>
+						<%- if count['percent'] > 5 -%>
+							<td><div class="bar" style="width: <%= bar_width %>px"><%= count['percent'] %></div>
+						<%- else -%>
+							<td><div class="bar" style="width: <%= bar_width %>px"></div><div class="bar-label"><%= count['percent'] %></div>
+						<%- end -%>
 					</tr>
 				<%- end -%>
 			</tbody>
