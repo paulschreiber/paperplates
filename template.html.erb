@@ -25,7 +25,7 @@
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
 		gtag('config', 'G-0EQQ502ZXG');
-		window.paperplates = <%= JSON.pretty_generate(@resolution_counts) %>;
+		window.paperplates = <%= JSON.generate(@resolution_counts) %>;
 		function showDataForPrecinct(precinct) {
 			const newData = window.paperplates[precinct];
 			const dataRows = document.getElementById('data');
