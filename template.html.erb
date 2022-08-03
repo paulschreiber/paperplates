@@ -3,6 +3,7 @@
 
 <head>
 	<%-
+	MINIMNUM_BAR_SIZE = 5
 	percent = (@total_summonses/@total_complaints.to_f * 100).round
 	description = "Follow along as the NYPD cracks down on illegal paper license plates. Summons data: #{@total_summonses}/#{@total_complaints} (#{percent}%)"
 	title = "NYPD paper license plate crackdown tracker"
@@ -162,7 +163,7 @@
 					<tr>
 						<th><%= label %></th>
 						<td class="count"><%= count['total'] %></td>
-						<%- if count['percent'] > 5 -%>
+						<%- if count['percent'] > MINIMNUM_BAR_SIZE -%>
 							<td><div class="bar" style="width: <%= bar_width %>px"><%= count['percent'] %></div>
 						<%- else -%>
 							<td><div class="bar" style="width: <%= bar_width %>px"></div><div class="bar-label"><%= count['percent'] %></div>
