@@ -81,8 +81,8 @@ section {
 		display: none;
 	}
 	.number {
-		font-size: 55vw;
-		line-height: 45vw;
+		font-size: 40vw;
+		line-height: 35vw;
 	}
 	.summary {
 		flex-direction: column;
