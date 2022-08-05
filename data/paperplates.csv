@@ -728,7 +728,6 @@
 111,No action,Action not necessary
 102,Something,Took action
 50,No action,Provided information
-106,Something,Took action
 104,No action,Provided information
 49,Something,Took action
 40,No action,Action not necessary
@@ -737,13 +736,18 @@
 88,No action,Action not necessary
 43,Something,Took action
 102,No action,Action not necessary
-48,No action,Found no violation
 79,No action,Jurisdiction
 24,No action,Action not necessary
 90,No action,Provided information
 102,No action,Action not necessary
 40,Something,Took action
 46,No action,Provided information
+79,No action,Contact Info
+111,Something,Took action
+69,Something,Took action
+18,Something,Took action
+106,Something,Took action
+48,No action,Found no violation
 10,No action,Action not necessary
 109,Something,Took action
 50,Summons,Summons
@@ -785,8 +789,6 @@
 104,Summons,Summons
 46,Something,Took action
 104,No action,Found no violation
-79,No action,Contact Info
-111,Something,Took action
 103,No action,Action not necessary
 81,Something,Took action
 111,Something,Took action
@@ -823,13 +825,19 @@
 45,Something,Took action
 102,Something,Took action
 33,No action,Action not necessary
-69,Something,Took action
 32,Something,Took action
 63,Something,Took action
 114,No action,Action not necessary
 72,Something,Took action
 40,No action,Found no violation
 110,Something,Took action
+104,Something,Took action
+52,Something,Took action
+113,Summons,Summons
+40,No action,Action not necessary
+52,No action,Provided information
+45,No action,Found no violation
+43,No action,Found no violation
 102,Something,Took action
 114,Something,Took action
 104,Something,Took action
@@ -851,38 +859,70 @@
 45,Summons,Summons
 114,No action,Action not necessary
 63,Something,Took action
-104,Something,Took action
-52,Something,Took action
-113,Summons,Summons
-40,No action,Action not necessary
-52,No action,Provided information
-45,No action,Found no violation
-43,No action,Found no violation
-47,Something,Took action
-100,No action,Found no violation
-47,No action,Jurisdiction
-70,,
-47,No action,Jurisdiction
 1,No action,Found no violation
-34,No action,Provided information
-109,,
-63,Something,Took action
-66,Something,Took action
-81,No action,Action not necessary
-18,Something,Took action
-34,No action,Found no violation
-79,Something,Took action
+100,No action,Found no violation
 18,No action,Gone
-104,No action,Gone
+47,No action,Jurisdiction
 49,No action,Action not necessary
-104,Something,Took action
-120,Something,Took action
-120,Something,Took action
+66,Something,Took action
+109,Something,Took action
+70,Summons,Summons
+34,No action,Found no violation
+47,Something,Took action
+81,No action,Action not necessary
+63,Something,Took action
+47,No action,Jurisdiction
 104,No action,Gone
-104,,
-109,,
+34,No action,Provided information
+79,Something,Took action
+120,Something,Took action
+104,Something,Took action
+104,Summons,Summons
+120,Something,Took action
 109,Summons,Summons
 70,No action,Gone
-104,No action,Provided information
-120,Something,Took action
 50,No action,Found no violation
+120,Something,Took action
+104,No action,Gone
+104,No action,Provided information
+109,Something,Took action
+50,No action,Gone
+40,Something,Took action
+62,,
+67,Something,Took action
+42,No action,Found no violation
+84,No action,Found no violation
+122,No action,Found no violation
+103,No action,Action not necessary
+44,No action,Action not necessary
+47,No action,Jurisdiction
+63,Something,Took action
+44,Something,Took action
+61,No action,Gone
+9,No action,Found no violation
+45,No action,Gone
+17,Something,Took action
+47,No action,Jurisdiction
+104,No action,Found no violation
+45,Something,Took action
+44,Something,Took action
+70,No action,Action not necessary
+113,,
+47,No action,Jurisdiction
+104,Summons,Summons
+19,Something,Took action
+63,No action,Action not necessary
+32,No action,Found no violation
+104,No action,Provided information
+13,No action,Action not necessary
+34,Something,Took action
+63,No action,Provided information
+20,No action,Action not necessary
+52,No action,Found no violation
+50,No action,Gone
+45,No action,Action not necessary
+45,Something,Took action
+120,No action,Gone
+30,Summons,Summons
+103,No action,Action not necessary
+115,,
