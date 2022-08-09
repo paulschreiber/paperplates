@@ -112,7 +112,7 @@ def process_data(data)
 
       resolution = RESOLUTION_MAP.key?(item[RESOLUTION_INDEX]) ? RESOLUTION_MAP[item[RESOLUTION_INDEX]] : item[RESOLUTION_INDEX] # rubocop:disable Layout/LineLength
       resolution_summary = RESOLUTION_SUMMARY_MAP.key?(item[RESOLUTION_INDEX]) ? RESOLUTION_SUMMARY_MAP[item[RESOLUTION_INDEX]] : item[RESOLUTION_INDEX] # rubocop:disable Layout/LineLength
-      csv << [sector.to_i, resolution_summary, resolution] if sector != -1
+      csv << [sector.to_i, resolution_summary, resolution, item[UNIQUE_KEY_INDEX]] if sector != -1
       next if resolution.nil?
 
       @resolution_counts['all'] = {'data' => {}} unless @resolution_counts.key?('all')
