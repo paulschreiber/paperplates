@@ -110,6 +110,7 @@
 	<section class="toggle">
 		<button class="switch" id="btn-per-precinct" disabled="disabled">Specific Precinct</button>
 		<button class="switch" id="btn-compare-precincts">Compare Precincts</button>
+		<button class="switch" id="btn-no-summonses">Precincts Without Summonses</button>
 	</section>
 
 	<section id="per-precinct" class="data-section">
@@ -167,6 +168,36 @@
 							<td><div class="bar" style="width: <%= bar_width %>px"><%= count['percent'] %></div>
 						<%- else -%>
 							<td><div class="bar" style="width: <%= bar_width %>px"></div><div class="bar-label"><%= count['percent'] %></div>
+						<%- end -%>
+					</tr>
+				<%- end -%>
+			</tbody>
+		</table>
+	</section>
+
+	<section id="no-summonses" class="hidden data-section">
+		<table>
+			<thead>
+				<tr>
+					<th>Precinct</th>
+					<th class="bar-count">Complaints</th>
+				</tr>
+			</thead>
+			<tbody id="data">
+				<%- @resolution_counts.sort_by do |key, value|
+					[-value['total'], key.to_i]
+				end.each do |label, count| -%>
+				<%-
+					next if ['all', 'Unknown'].include?(label)
+					next unless count['data']['Summons'].to_i == 0
+					bar_width = count['total'] * 2
+				-%>
+					<tr>
+						<th><%= label %></th>
+						<%- if count['total'] > MINIMNUM_BAR_SIZE -%>
+							<td><div class="bar" style="width: <%= bar_width %>px"><%= count['total'] %></div>
+						<%- else -%>
+							<td><div class="bar" style="width: <%= bar_width %>px"></div><div class="bar-label"><%= count['total'] %></div>
 						<%- end -%>
 					</tr>
 				<%- end -%>

@@ -13,14 +13,23 @@ p {
 }
 .toggle button {
 	padding: 0.5em 2em;
-	border-radius: 1em;
 	background-color: cornflowerblue;
 	color: white;
 	border: none;
 	cursor: pointer;
+	opacity: 0.5;
+	font-size: 1.4rem;
+}
+.toggle button:first-of-type {
+	border-top-left-radius: 1em;
+	border-bottom-left-radius: 1em;
+}
+.toggle button:last-of-type {
+	border-top-right-radius: 1em;
+	border-bottom-right-radius: 1em;
 }
 .toggle button[disabled="disabled"] {
-	opacity: 0.5;
+	opacity: 1.0;
 }
 table {
 	margin: 0 auto;
@@ -48,7 +57,7 @@ td, th.count, th.bar-count {
 	background: cornflowerblue;
 	color: white;
 }
-blockquote, .form, select, .toggle button {
+blockquote, .form, select {
 	font-size: 1.5rem;
 }
 blockquote {
@@ -64,9 +73,6 @@ body {
 }
 section {
 	margin-bottom: 3rem;
-}
-.switch + .switch {
-	margin-left: 1em;
 }
 .hidden {
 	display: none;
@@ -90,5 +96,8 @@ section {
 	.switch + .switch {
 		margin-left: 0;
 		margin-top: 1em;
+	}
+	.toggle button {
+		border-radius: 1em;
 	}
 }
