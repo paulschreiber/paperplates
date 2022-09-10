@@ -1775,7 +1775,6 @@
 79,No action,Action not necessary,55282296
 108,No action,Jurisdiction,55283497
 115,Something,Took action,55281031
-109,Something,Took action,55284672
 108,Something,Took action,55284673
 44,Something,Took action,55284674
 121,No action,Action not necessary,55285802
@@ -1789,17 +1788,18 @@
 103,No action,Gone,55289210
 60,No action,Gone,55289211
 63,No action,Action not necessary,55289212
-68,Something,Took action,55289213
 46,No action,Provided information,55289214
-102,Something,Took action,55289215
 52,No action,Found no violation,55290319
 40,No action,Action not necessary,55290322
 63,No action,Action not necessary,55291455
-46,Something,Took action,55291456
 34,Something,Took action,55291457
-49,Something,Took action,55292562
 50,No action,Gone,55292563
 60,Something,Took action,55292564
+109,Something,Took action,55284672
+68,Something,Took action,55289213
+102,Something,Took action,55289215
+46,Something,Took action,55291456
+49,Something,Took action,55292562
 9,Summons,Summons,55293657
 60,Something,Took action,55293658
 63,No action,Provided information,55293659
@@ -1921,31 +1921,63 @@
 113,Something,Took action,55324427
 104,Something,Took action,55324428
 75,Something,Took action,55325663
-62,No action,Action not necessary,55325667
-106,No action,Found no violation,55326914
 120,No action,Gone,55325664
 33,No action,Action not necessary,55325665
 19,Something,Took action,55325666
+62,No action,Action not necessary,55325667
 49,Summons,Summons,55326913
-33,No action,Action not necessary,55334307
-122,No action,Found no violation,55334309
-43,No action,Found no violation,55329389
+106,No action,Found no violation,55326914
 108,No action,Found no violation,55328173
-90,No action,Found no violation,55330553
-109,No action,Found no violation,55333004
-102,No action,Gone,55329385
-24,No action,Found no violation,55329390
 19,No action,Action not necessary,55328174
-73,No action,Found no violation,55333005
-104,No action,Action not necessary,55329386
 62,Something,Took action,55328175
-19,No action,Action not necessary,55330555
-78,Summons,Summons,55333006
-112,No action,Action not necessary,55331765
-113,No action,Action not necessary,55334308
-43,Summons,Summons,55334310
+40,No action,Action not necessary,55328176
+102,No action,Gone,55329385
+104,No action,Action not necessary,55329386
 63,Something,Took action,55329388
-40,,,55328176
-109,No action,Found no violation,55331764
+43,No action,Found no violation,55329389
+24,No action,Found no violation,55329390
+90,No action,Found no violation,55330553
 30,Summons,Summons,55330554
+19,No action,Action not necessary,55330555
+109,No action,Found no violation,55331764
+112,No action,Action not necessary,55331765
+109,No action,Found no violation,55333004
+73,No action,Found no violation,55333005
+78,Summons,Summons,55333006
 88,No action,Provided information,55333007
+33,No action,Action not necessary,55334307
+113,No action,Action not necessary,55334308
+122,No action,Found no violation,55334309
+43,Summons,Summons,55334310
+45,Something,Took action,55339380
+75,No action,Jurisdiction,55335630
+112,Something,Took action,55335625
+121,Something,Report,55336882
+70,No action,Gone,55338129
+106,Something,Took action,55335626
+63,No action,Found no violation,55338128
+114,Summons,Summons,55339378
+108,Something,Took action,55336883
+41,Summons,Summons,55335629
+79,No action,Action not necessary,55339379
+34,No action,Found no violation,55336884
+75,Something,Took action,55338127
+9,No action,Found no violation,55339377
+34,No action,Found no violation,55335628
+68,Summons,Summons,55336885
+33,Something,Took action,55336881
+104,No action,Gone,55339376
+102,Something,Took action,55335627
+48,,,55341904
+47,No action,Jurisdiction,55343211
+34,No action,Found no violation,55341900
+102,No action,Gone,55344481
+90,Something,Took action,55344485
+84,No action,Gone,55341901
+66,,,55344486
+106,No action,Jurisdiction,55344483
+49,No action,Gone,55341902
+47,No action,Jurisdiction,55340651
+121,Something,Took action,55343210
+107,No action,Action not necessary,55341903
+34,Summons,Summons,55344484
