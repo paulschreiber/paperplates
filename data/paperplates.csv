@@ -1098,12 +1098,12 @@
 46,Something,Took action,55171773
 63,Something,Took action,55171774
 113,No action,Provided information,55171775
-115,No action,Provided information,55213755
 105,Summons,Summons,55180548
 113,Something,Took action,55180549
+115,No action,Provided information,55213755
+34,Summons,Summons,55184147
 104,Something,Took action,55184145
 34,Summons,Summons,55184146
-34,Summons,Summons,55184147
 47,Something,Took action,54850685
 47,No action,Found no violation,54846961
 47,Something,Took action,54854456
@@ -1930,7 +1930,6 @@
 108,No action,Found no violation,55328173
 19,No action,Action not necessary,55328174
 62,Something,Took action,55328175
-40,No action,Action not necessary,55328176
 102,No action,Gone,55329385
 104,No action,Action not necessary,55329386
 63,Something,Took action,55329388
@@ -1949,6 +1948,7 @@
 113,No action,Action not necessary,55334308
 122,No action,Found no violation,55334309
 43,Summons,Summons,55334310
+40,No action,Action not necessary,55328176
 112,Something,Took action,55335625
 106,Something,Took action,55335626
 102,Something,Took action,55335627
@@ -2080,22 +2080,55 @@
 105,Something,Took action,55373177
 49,Summons,Summons,55374287
 79,Summons,Summons,55375752
-1,Something,Took action,55377304
 120,Something,Took action,55377303
-106,No action,Gone,55380377
-106,Summons,Summons,55378808
-120,No action,Gone,55385067
-107,Received,Received,55381980
-79,No action,Action not necessary,55385070
-33,Something,Took action,55385068
-24,No action,Found no violation,55383514
-43,No action,Found no violation,55385071
-90,No action,Action not necessary,55378810
+1,Something,Took action,55377304
 40,No action,Found no violation,55378807
-71,No action,Found no violation,55383513
-78,Something,Took action,55385065
-104,Something,Took action,55385072
+106,Summons,Summons,55378808
 105,Something,Took action,55378809
+90,No action,Action not necessary,55378810
+106,No action,Gone,55380377
+107,Something,Report,55381980
+110,No action,Found no violation,55381981
+71,No action,Found no violation,55383513
+24,No action,Found no violation,55383514
+78,Something,Took action,55385065
 102,No action,Gone,55385066
-110,,,55381981
+120,No action,Gone,55385067
+33,Something,Took action,55385068
+79,No action,Action not necessary,55385070
+43,No action,Found no violation,55385071
+104,Something,Took action,55385072
 113,Something,Took action,55386611
+63,Something,Took action,55390030
+102,Something,Took action,55391767
+106,No action,Gone,55388400
+109,Something,Took action,55388399
+121,Something,Report,55390031
+75,Something,Took action,55390032
+75,Something,Took action,55388398
+109,Summons,Summons,55391766
+44,No action,Found no violation,55390033
+120,No action,Provided information,55391765
+102,No action,Found no violation,55391764
+109,Something,Took action,55398769
+108,No action,Gone,55393526
+73,,,55398773
+71,Something,Took action,55393529
+79,Something,Took action,55393525
+47,No action,Jurisdiction,55398772
+106,Something,Took action,55400459
+19,No action,Found no violation,55393530
+50,No action,Gone,55397063
+69,Something,Took action,55393528
+108,Something,Took action,55398771
+113,Something,Took action,55393531
+48,,,55395303
+23,Something,Took action,55400458
+75,Something,Took action,55398770
+50,,,55400460
+109,Something,Took action,55393527
+45,No action,Gone,55395302
+90,Something,Took action,55395301
+1,No action,Action not necessary,55400457
+48,No action,Found no violation,55397064
+71,,,55400461
