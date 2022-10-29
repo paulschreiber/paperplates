@@ -4,8 +4,8 @@ source 'https://rubygems.org'
 
 git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
+gem 'cssminify'
 gem 'csv'
 gem 'httparty'
 gem 'json'
 gem 'optparse'
-gem 'cssminify'

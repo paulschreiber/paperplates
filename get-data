@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'httparty'
-require 'erb'
-require 'json'
-require 'csv'
-require 'optparse'
 require 'cssminify'
+require 'csv'
+require 'erb'
+require 'httparty'
+require 'json'
+require 'optparse'
 
 BASE_URL = 'https://maps.nyc.gov/geoclient/v1/search.json?app_key=E2857975AA57366BC&app_id=nyc-gov-nypd&input=%s'
 DATA_URL = 'https://data.cityofnewyork.us/api/views/n2qu-9sgw/rows.json?accessType=DOWNLOAD'
