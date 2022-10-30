@@ -34,7 +34,7 @@ RESOLUTION_MAP = {
   'This complaint does not fall under the Police Department\'s jurisdiction.' => 'Jurisdiction',
   'Your request can not be processed at this time because of insufficient contact information. Please create a new Service Request on NYC.gov and provide more detailed contact information.' => 'Contact Info',
   'Your complaint has been received by the Police Department and additional information will be available later.' => 'Received',
-	'The Police Department responded to the complaint but officers were unable to gain entry into the premises' => 'Unable to gain entry to premises'
+  'The Police Department responded to the complaint but officers were unable to gain entry into the premises.' => 'Unable to gain entry to premises'
 }.freeze
 
 RESOLUTION_SUMMARY_MAP = {
@@ -48,7 +48,7 @@ RESOLUTION_SUMMARY_MAP = {
   'This complaint does not fall under the Police Department\'s jurisdiction.' => 'No action',
   'Your request can not be processed at this time because of insufficient contact information. Please create a new Service Request on NYC.gov and provide more detailed contact information.' => 'No action',
   'Your complaint has been received by the Police Department and additional information will be available later.' => 'Received',
-	'The Police Department responded to the complaint but officers were unable to gain entry into the premises' => 'Unable to gain entry to premises'
+  'The Police Department responded to the complaint but officers were unable to gain entry into the premises.' => 'Unable to gain entry to premises'
 }.freeze
 
 # rubocop:enable Layout/LineLength
