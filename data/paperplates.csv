@@ -1735,9 +1735,6 @@
 50,No action,Action not necessary,55946534
 103,Something,Took action,55946535
 110,Something,Took action,56077306
-62,Something,Took action,56078232
-62,Something,Took action,56078233
-50,Something,Took action,56078267
 50,No action,Found no violation,55996041
 50,No action,Gone,55996042
 90,Summons,Summons,55996043
@@ -1755,24 +1752,9 @@
 68,No action,Gone,56030613
 34,No action,Gone,56030614
 110,Something,Took action,56030615
-115,,,56078809
-110,Something,Took action,56079077
-72,Something,Took action,56079236
-101,No action,Jurisdiction,56079237
-112,No action,Action not necessary,56079238
-50,Something,Took action,56079206
-101,No action,Jurisdiction,56079711
-110,No action,Found no violation,56080206
-47,No action,Found no violation,56080311
-49,No action,Action not necessary,56080869
-113,Something,Took action,56080985
-113,No action,Jurisdiction,56081629
-50,Summons,Summons,56082004
 44,No action,Gone,55949005
 50,No action,Gone,55949006
-25,,,56081862
 71,No action,Found no violation,55949008
-62,No action,Action not necessary,56082138
 115,No action,Action not necessary,55937610
 109,Something,Took action,55937612
 49,Something,Took action,55937613
@@ -1781,7 +1763,6 @@
 41,Summons,Summons,55924046
 66,Something,Took action,55924048
 32,No action,Found no violation,55924049
-50,No action,Found no violation,56082391
 62,Something,Took action,55997400
 52,Something,Took action,55997401
 40,No action,Action not necessary,55997404
@@ -1789,9 +1770,18 @@
 52,No action,Gone,55950224
 34,Something,Took action,55950225
 62,Something,Took action,55950226
+101,No action,Jurisdiction,56079237
+62,Something,Took action,56078233
+50,Something,Took action,56079206
+112,No action,Action not necessary,56079238
 13,No action,Provided information,55925310
 113,Something,Took action,55925311
 107,Summons,Summons,55925312
+101,No action,Jurisdiction,56079711
+25,,,56081862
+62,No action,Action not necessary,56082138
+113,No action,Jurisdiction,56081629
+113,Something,Took action,56080985
 78,Something,Took action,55194711
 88,Something,Took action,55940243
 67,Something,Took action,55895488
@@ -4650,10 +4640,20 @@
 72,Something,Took action,56076225
 113,Something,Took action,56076226
 9,No action,Found no violation,56076227
-114,No action,Provided information,56077459
 61,No action,Action not necessary,56077303
 104,No action,Gone,56077304
 45,No action,Action not necessary,56077305
 50,No action,Found no violation,56077307
 77,No action,Gone,56077308
 110,No action,Gone,56077309
+62,Something,Took action,56078232
+114,No action,Provided information,56077459
+115,,,56078809
+72,Something,Took action,56079236
+50,Something,Took action,56078267
+110,Something,Took action,56079077
+49,No action,Action not necessary,56080869
+47,No action,Found no violation,56080311
+50,Summons,Summons,56082004
+110,No action,Found no violation,56080206
+50,No action,Found no violation,56082391
