@@ -10,7 +10,7 @@
       "createdAt" : 1658149591,
       "description" : "<b>  NOTE: This data does not present a full picture of 311 calls or service requests, in part because of operational and system complexities associated with remote call taking necessitated by the unprecedented volume 311 is handling during the Covid-19 crisis. The City is working to address this issue. </b>\n<p>\nAll 311 Service Requests from 2010 to present. This information is automatically updated daily.\n</p>",
       "displayType" : "table",
-      "downloadCount" : 4151,
+      "downloadCount" : 4153,
       "hideFromCatalog" : true,
       "hideFromDataJson" : true,
       "newBackend" : true,
@@ -387,7 +387,8 @@
       "flags" : [ "ownerMayBeContacted", "restorable", "restorePossibleForType", "unsaved" ]
     }
   },
-  "data" : [ [ "row-tsa8.qpvx.hhfp", "00000000-0000-0000-72D4-15F707BFD3FF", 0, 1674756728, null, 1674779528, null, "{ }", "2022-07-29T00:54:12", "2022-07-29T01:26:33", "The Police Department responded to the complaint and took action to fix the condition.", "Closed", "109-13 118 STREET", "SOUTH OZONE PARK", "11420", "10 QUEENS", "1033362", "187696", "40.681722682036565", "-73.82292835328948", "54935236" ]
+  "data" : [ [ "row-xwaj~5nsd_wk67", "00000000-0000-0000-2093-91DE52AC6A64", 0, 1674756728, null, 1674781654, null, "{ }", "2022-07-12T23:46:26", "2022-07-13T06:33:05", "The Police Department responded and upon arrival those responsible for the condition were gone.", "Closed", "9 AVENUE", null, "11356", "Unspecified QUEENS", null, null, null, null, "54773418" ]
+, [ "row-tsa8.qpvx.hhfp", "00000000-0000-0000-72D4-15F707BFD3FF", 0, 1674756728, null, 1674779528, null, "{ }", "2022-07-29T00:54:12", "2022-07-29T01:26:33", "The Police Department responded to the complaint and took action to fix the condition.", "Closed", "109-13 118 STREET", "SOUTH OZONE PARK", "11420", "10 QUEENS", "1033362", "187696", "40.681722682036565", "-73.82292835328948", "54935236" ]
 , [ "row-gkam.fkhq~k4fw", "00000000-0000-0000-AFE5-0878DF371ED9", 0, 1674756728, null, 1674779532, null, "{ }", "2022-07-29T10:53:05", "2022-07-29T11:29:05", "The Police Department issued a summons in response to the complaint.", "Closed", "45 WEST  118 STREET", "NEW YORK", "10026", "10 MANHATTAN", "998869", "231724", "40.802692695142525", "-73.94719593668222", "54947392" ]
 , [ "row-i4wa-6y23~s749", "00000000-0000-0000-6B34-BF0BFA56F8D5", 0, 1674756728, null, 1674779532, null, "{ }", "2022-07-29T13:07:36", "2022-07-29T14:47:13", "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.", "Closed", "149 WEST  225 STREET", "BRONX", "10463", "08 BRONX", "1008499", "258102", "40.875071417247405", "-73.91231686911047", "54948718" ]
 , [ "row-kgdi~awbw-njgz", "00000000-0000-0000-1378-AC6FD1D67258", 0, 1674756728, null, 1674779532, null, "{ }", "2022-07-29T09:47:37", "2022-07-29T11:51:24", "The Police Department responded to the complaint and determined that police action was not necessary.", "Closed", "332 WEST   17 STREET", "NEW YORK", "10011", "04 MANHATTAN", "983638", "209648", "40.74211192027058", "-74.00220854370338", "54946152" ]
@@ -7373,6 +7374,5 @@
 , [ "row-2p7y~da43~vcgu", "00000000-0000-0000-475C-777997EDDF2C", 0, 1674756728, null, 1674798096, null, "{ }", "2023-01-16T00:48:26", "2023-01-16T03:05:55", "The Police Department responded to the complaint and determined that police action was not necessary.", "Closed", "16-04 200 STREET", "BAYSIDE", "11360", "07 QUEENS", "1041392", "224882", "40.78374062602706", "-73.79366074651773", "56531490" ]
 , [ "row-qa43-dbya~nyxe", "00000000-0000-0000-C500-86CD1D686846", 0, 1674756728, null, 1674798096, null, "{ }", "2023-01-10T02:26:47", "2023-01-10T03:40:04", "The Police Department responded to the complaint and with the information available observed no evidence of the violation at that time.", "Closed", "34-02 31 STREET", "ASTORIA", "11106", "01 QUEENS", "1004345", "215963", "40.75942218478039", "-73.92746368531552", "56495604" ]
 , [ "row-gki2~b3i7-78q7", "00000000-0000-0000-08B7-09D705354D1B", 0, 1674756728, null, 1674798122, null, "{ }", "2023-01-13T08:49:31", "2023-01-13T15:08:25", "The Police Department responded to the complaint and determined that police action was not necessary.", "Closed", "93 SKILLMAN AVENUE", "BROOKLYN", "11211", "01 BROOKLYN", "998784", "200016", "40.71566251561365", "-73.94757150608645", "56522521" ]
-, [ "row-xwaj~5nsd_wk67", "00000000-0000-0000-2093-91DE52AC6A64", 0, 1674756728, null, 1674781654, null, "{ }", "2022-07-12T23:46:26", "2022-07-13T06:33:05", "The Police Department responded and upon arrival those responsible for the condition were gone.", "Closed", "9 AVENUE", null, "11356", "Unspecified QUEENS", null, null, null, null, "54773418" ]
  ]
 }
