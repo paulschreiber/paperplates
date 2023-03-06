@@ -519,42 +519,42 @@
 70,No action,Action not necessary,56950827
 104,No action,Provided information,56950828
 109,Something,Report,56950945
-45,,,56951818
-62,No action,Found no violation,56951835
-14,No action,Found no violation,56951888
-71,Something,Took action,56951906
-115,No action,Found no violation,56951911
-62,No action,Found no violation,56951925
-61,Something,Took action,56952112
-62,No action,Found no violation,56952237
-114,No action,Found no violation,56952550
 109,Something,Took action,56951358
-114,Something,Took action,56952814
-50,No action,Gone,56952905
-50,No action,Found no violation,56952926
+61,Something,Took action,56952112
 50,No action,Gone,56952927
-114,No action,Found no violation,56953109
+114,No action,Found no violation,56952550
+62,No action,Found no violation,56951835
+114,Something,Took action,56952814
+50,No action,Found no violation,56952926
+50,No action,Gone,56952905
+14,No action,Found no violation,56951888
+115,No action,Found no violation,56951911
+71,Something,Took action,56951906
+62,No action,Found no violation,56951925
 47,No action,Jurisdiction,56953888
+45,,,56951818
+114,No action,Found no violation,56953109
+62,No action,Found no violation,56952237
 34,Something,Took action,56954037
-94,No action,Action not necessary,56954378
-106,,,56954651
-68,No action,Action not necessary,56954831
-68,No action,Action not necessary,56954935
-78,No action,Found no violation,56955015
-83,No action,Found no violation,56955141
-88,No action,Action not necessary,56955724
-94,No action,Action not necessary,56955915
 108,No action,Action not necessary,56955947
-77,No action,Action not necessary,56955950
-114,No action,Found no violation,56956920
-75,Something,Took action,56956967
-75,No action,Found no violation,56957104
-75,No action,Provided information,56957222
-62,No action,Action not necessary,56957589
-94,No action,Action not necessary,56957881
+106,,,56954651
+68,No action,Action not necessary,56954935
 94,No action,Action not necessary,56958736
+62,No action,Action not necessary,56957589
+75,Something,Took action,56956967
+78,No action,Found no violation,56955015
+94,No action,Action not necessary,56955915
+68,No action,Action not necessary,56954831
 62,,,56958757
+77,No action,Action not necessary,56955950
+75,No action,Provided information,56957222
+75,No action,Found no violation,56957104
+88,No action,Action not necessary,56955724
+94,No action,Action not necessary,56954378
+114,No action,Found no violation,56956920
 24,No action,Action not necessary,56959140
+94,No action,Action not necessary,56957881
+83,No action,Found no violation,56955141
 17,No action,Action not necessary,56758360
 66,No action,Action not necessary,56758516
 40,Summons,Summons,56758578
