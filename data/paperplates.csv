@@ -1014,43 +1014,43 @@
 30,No action,Action not necessary,56993341
 104,No action,Gone,56993472
 45,No action,Action not necessary,56994201
-104,No action,Gone,56995748
-76,No action,Action not necessary,56995872
-121,No action,Found no violation,56995876
-50,Something,Took action,56996889
-45,No action,Gone,56997270
-62,No action,Action not necessary,56997377
-45,Something,Took action,56997439
-104,,,56998034
-46,,,56998143
-102,No action,Found no violation,56998262
-61,No action,Action not necessary,56998461
-49,,,56999092
-68,No action,Action not necessary,56999752
-50,No action,Gone,56999784
-90,No action,Action not necessary,56999852
-77,No action,Jurisdiction,57000290
-94,No action,Action not necessary,57000567
-106,Something,Took action,57000735
-62,Something,Report,57000788
-102,No action,Found no violation,57001465
-49,No action,Jurisdiction,57001559
-60,Something,Took action,57001571
-67,No action,Gone,57001624
-30,No action,Gone,57001754
-46,,,57001891
-104,,,57001969
-33,No action,Gone,57002064
-70,No action,Action not necessary,57002998
-102,,,57003059
-88,No action,Found no violation,57003060
-25,No action,Found no violation,57003093
-77,No action,Gone,57004314
-81,Summons,Summons,57004426
-66,No action,Provided information,57004524
-111,No action,Gone,57004648
 105,Something,Took action,56690631
+102,No action,Found no violation,56998262
 52,Something,Took action,56691826
+61,No action,Action not necessary,56998461
+50,Something,Took action,56996889
+62,No action,Action not necessary,56997377
+76,No action,Action not necessary,56995872
+45,Something,Took action,56997439
+121,No action,Found no violation,56995876
+68,No action,Action not necessary,56999752
+49,,,56999092
+46,,,56998143
+104,,,56998034
+45,No action,Gone,56997270
+104,No action,Gone,56995748
+102,,,57003059
+102,No action,Found no violation,57001465
+104,,,57001969
+81,Summons,Summons,57004426
+94,No action,Action not necessary,57000567
+70,No action,Action not necessary,57002998
+77,No action,Gone,57004314
+33,No action,Gone,57002064
+67,No action,Gone,57001624
+90,No action,Action not necessary,56999852
+111,No action,Gone,57004648
+62,Something,Report,57000788
+60,Something,Took action,57001571
+46,,,57001891
+88,No action,Found no violation,57003060
+77,No action,Jurisdiction,57000290
+106,Something,Took action,57000735
+50,No action,Gone,56999784
+30,No action,Gone,57001754
+25,No action,Found no violation,57003093
+49,No action,Jurisdiction,57001559
+66,No action,Provided information,57004524
 90,No action,Found no violation,56820955
 79,No action,Jurisdiction,56821235
 90,Summons,Summons,56821457
