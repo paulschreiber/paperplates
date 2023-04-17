@@ -45,7 +45,7 @@ td, th.count, th.bar-count {
 .number {
 	font-size: 12rem;
 	font-weight: 600;
-	line-height: 13rem;
+	line-height: 10rem;
 }
 .bar, .bar-label {
 	display: inherit;
@@ -87,8 +87,8 @@ section {
 		display: none;
 	}
 	.number {
-		font-size: 40vw;
-		line-height: 35vw;
+		font-size: 30vw;
+		line-height: 28vw;
 	}
 	.summary {
 		flex-direction: column;
