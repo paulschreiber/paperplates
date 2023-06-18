@@ -3193,39 +3193,39 @@
 18,No action,Gone,57910951
 109,Something,Took action,57910952
 94,No action,Action not necessary,57911903
-108,No action,Jurisdiction,57912751
-115,Summons,Summons,57912775
 75,No action,Jurisdiction,57912005
 121,Something,Report,57912008
 69,Something,Took action,57912087
 115,Something,Took action,57912088
 26,No action,Action not necessary,57912138
 115,No action,Found no violation,57912139
-1,Something,Took action,57913981
+108,No action,Jurisdiction,57912751
+115,Summons,Summons,57912775
+60,No action,Action not necessary,57919117
 88,No action,Action not necessary,57914078
-112,No action,Found no violation,57914114
+113,Something,Took action,57919115
+102,Something,Took action,57919091
+104,No action,Found no violation,57916674
+112,No action,Gone,57916642
+1,Something,Took action,57919125
 50,No action,Gone,57915354
+70,No action,Action not necessary,57916762
+42,Something,Took action,57919116
+62,No action,Found no violation,57917949
+72,Something,Took action,57920273
+61,No action,Action not necessary,57920258
 108,No action,Found no violation,57915355
+25,No action,Action not necessary,57916746
+94,No action,Found no violation,57916683
+78,No action,Action not necessary,57920259
 62,No action,Action not necessary,57915356
 60,No action,Action not necessary,57915420
-112,No action,Gone,57916642
-104,No action,Found no violation,57916674
+1,Something,Took action,57913981
+112,No action,Found no violation,57914114
 102,,,57916675
-94,No action,Found no violation,57916683
-108,No action,Jurisdiction,57916685
-69,Something,Took action,57916744
-25,No action,Action not necessary,57916746
-70,No action,Action not necessary,57916762
-62,No action,Found no violation,57917949
-102,Something,Took action,57919091
-113,Something,Took action,57919115
-42,Something,Took action,57919116
-60,No action,Action not necessary,57919117
-1,Something,Took action,57919125
 77,No action,Jurisdiction,57920217
-61,No action,Action not necessary,57920258
-78,No action,Action not necessary,57920259
-72,Something,Took action,57920273
+69,Something,Took action,57916744
+108,No action,Jurisdiction,57916685
 34,Summons,Summons,57921465
 69,No action,Found no violation,57921475
 104,No action,Provided information,57491843
