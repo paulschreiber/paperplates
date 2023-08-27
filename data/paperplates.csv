@@ -14969,21 +14969,16 @@
 104,No action,Gone,58548313
 45,Something,Took action,58556547
 109,Summons,Summons,58556548
-9,No action,Found no violation,58557823
 115,No action,Action not necessary,58557824
 63,Something,Took action,58557825
 121,Something,Took action,58558999
-121,No action,Action not necessary,58559000
 62,No action,Action not necessary,58559001
 9,No action,Action not necessary,58559002
 94,No action,Action not necessary,58559003
 121,Something,Took action,58560260
 121,No action,Found no violation,58560261
 114,Something,Took action,58561494
-61,Something,Took action,58561495
-61,Something,Took action,58561496
 1,No action,Found no violation,58562711
-1,No action,Action not necessary,58562712
 104,No action,Found no violation,58562713
 114,Something,Took action,58563960
 114,No action,Gone,58563961
@@ -14992,26 +14987,66 @@
 120,Summons,Summons,58565167
 63,No action,Action not necessary,58565168
 43,No action,Found no violation,58565169
+46,No action,Action not necessary,58589119
+115,No action,Action not necessary,58589120
+66,Summons,Summons,58597954
+28,Summons,Summons,58599250
+34,Something,Took action,58599251
+1,No action,Gone,58599252
+70,Summons,Summons,58606316
+102,No action,Gone,58606317
+52,Summons,Summons,58613041
+9,No action,Found no violation,58557823
+121,No action,Action not necessary,58559000
+90,No action,Found no violation,58605258
+61,Something,Took action,58561495
+61,Something,Took action,58561496
+1,No action,Action not necessary,58562712
 52,Something,Took action,58566235
 102,Summons,Summons,58566236
 46,No action,Found no violation,58567292
 1,No action,Found no violation,58567293
 105,Something,Took action,58567294
+52,No action,Action not necessary,58277689
+102,No action,Found no violation,58277696
+49,Summons,Summons,58280164
 6,No action,Action not necessary,58568460
 106,No action,Gone,58568461
+113,Something,Took action,58282592
+84,No action,Found no violation,58283937
 115,No action,Found no violation,58569551
 61,No action,Action not necessary,58569552
 104,Something,Took action,58569553
+43,Something,Took action,58285078
+108,No action,Found no violation,58285079
+75,No action,Jurisdiction,58285081
+34,Something,Took action,58285082
+77,No action,Action not necessary,58286186
 68,Something,Took action,58570637
 52,No action,Action not necessary,58570638
 105,Summons,Summons,58570639
+79,No action,Action not necessary,58287423
+71,Summons,Summons,58287424
+76,No action,Found no violation,58287425
+102,No action,Found no violation,58288461
+79,No action,Contact Info,58288463
+47,Summons,Summons,58289586
 63,Something,Took action,58571742
 70,Something,Took action,58571743
 111,No action,Action not necessary,58571744
+108,No action,Action not necessary,58290733
+76,Summons,Summons,58290735
+30,No action,Action not necessary,58290736
+69,Something,Took action,58290737
+122,No action,Action not necessary,58291840
 48,No action,Action not necessary,58572817
 52,No action,Action not necessary,58572818
 105,Something,Took action,58572819
 5,Something,Took action,58572820
+115,No action,Gone,58292999
+67,Something,Took action,58293000
+79,No action,Action not necessary,58293001
+62,No action,Action not necessary,58293002
 72,No action,Found no violation,58573949
 105,Summons,Summons,58573950
 107,Something,Took action,58573951
@@ -15053,6 +15088,7 @@
 70,Summons,Summons,58584092
 18,No action,Found no violation,58584093
 88,No action,Action not necessary,58584094
+14,No action,Action not necessary,58303188
 115,No action,Found no violation,58585356
 75,No action,Provided information,58585357
 107,Summons,Summons,58585358
@@ -15072,8 +15108,6 @@
 115,No action,Gone,58587858
 28,No action,Provided information,58589116
 81,Something,Took action,58589118
-46,No action,Action not necessary,58589119
-115,No action,Action not necessary,58589120
 115,No action,Action not necessary,58589121
 76,Summons,Summons,58589122
 40,Something,Took action,58590385
@@ -15095,14 +15129,10 @@
 115,No action,Action not necessary,58596695
 60,Something,Took action,58597952
 109,No action,Gone,58597953
-66,Summons,Summons,58597954
 6,No action,Action not necessary,58597955
 52,No action,Action not necessary,58597956
 105,No action,Found no violation,58599248
 100,Summons,Summons,58599249
-28,Summons,Summons,58599250
-34,Something,Took action,58599251
-1,No action,Gone,58599252
 70,No action,Action not necessary,58599254
 102,Something,Took action,58600496
 120,No action,Found no violation,58601704
@@ -15125,67 +15155,67 @@
 1,Something,Took action,58604143
 90,No action,Found no violation,58604144
 102,Something,Took action,58604145
-70,Summons,Summons,58606316
-102,No action,Gone,58606317
 120,Something,Took action,58605257
-90,No action,Found no violation,58605258
-66,No action,Found no violation,58613039
 1,Summons,Summons,58606315
-120,Something,Took action,58607454
-106,Summons,Summons,58610805
-90,No action,Gone,58607458
-68,Summons,Summons,58609675
-114,,,58607462
-68,No action,Action not necessary,58613043
-109,Something,Took action,58610806
-102,No action,Found no violation,58607453
-105,No action,Found no violation,58613044
-79,Summons,Summons,58607460
-28,No action,Provided information,58613040
-66,Something,Took action,58609674
-28,No action,Gone,58607457
-112,No action,Gone,58607461
-78,No action,Action not necessary,58606320
-19,Something,Took action,58611930
-52,Summons,Summons,58613041
-78,No action,Action not necessary,58611931
-107,Something,Took action,58607456
-68,Something,Took action,58609673
-50,No action,Provided information,58608600
-78,No action,Action not necessary,58607455
 34,Something,Took action,58606318
-112,No action,Gone,58613042
-46,No action,Found no violation,58607459
 90,No action,Found no violation,58606319
-40,Something,Took action,58609672
-28,Something,Took action,58611929
+78,No action,Action not necessary,58606320
+102,No action,Found no violation,58607453
+120,Something,Took action,58607454
+78,No action,Action not necessary,58607455
+107,Something,Took action,58607456
+28,No action,Gone,58607457
+90,No action,Gone,58607458
+46,No action,Found no violation,58607459
+79,Summons,Summons,58607460
+112,No action,Gone,58607461
+114,No action,Found no violation,58607462
 102,No action,Action not necessary,58608599
-52,No action,Action not necessary,58277689
-102,No action,Found no violation,58277696
-49,Summons,Summons,58280164
-113,Something,Took action,58282592
-84,No action,Found no violation,58283937
-43,Something,Took action,58285078
-108,No action,Found no violation,58285079
-75,No action,Jurisdiction,58285081
-34,Something,Took action,58285082
-77,No action,Action not necessary,58286186
-79,No action,Action not necessary,58287423
-71,Summons,Summons,58287424
-76,No action,Found no violation,58287425
-102,No action,Found no violation,58288461
-79,No action,Contact Info,58288463
-47,Summons,Summons,58289586
-108,No action,Action not necessary,58290733
-76,Summons,Summons,58290735
-30,No action,Action not necessary,58290736
-69,Something,Took action,58290737
-122,No action,Action not necessary,58291840
-115,No action,Gone,58292999
-67,Something,Took action,58293000
-79,No action,Action not necessary,58293001
-62,No action,Action not necessary,58293002
-14,No action,Action not necessary,58303188
+50,No action,Provided information,58608600
+40,Something,Took action,58609672
+68,Something,Took action,58609673
+66,Something,Took action,58609674
+68,Summons,Summons,58609675
+106,Summons,Summons,58610805
+109,Something,Took action,58610806
+28,Something,Took action,58611929
+19,Something,Took action,58611930
+78,No action,Action not necessary,58611931
+66,No action,Found no violation,58613039
+28,No action,Provided information,58613040
+112,No action,Gone,58613042
+68,No action,Action not necessary,58613043
+105,No action,Found no violation,58613044
+79,Summons,Summons,58614357
+94,No action,Action not necessary,58619155
+108,Something,Took action,58615500
+34,No action,Found no violation,58617936
+28,Summons,Summons,58614356
+104,,,58615503
+112,No action,Found no violation,58616728
+45,Something,Took action,58619156
+49,No action,Found no violation,58620309
+102,,,58619157
+60,Something,Took action,58619152
+28,Summons,Summons,58615499
+1,Something,Took action,58615497
+102,,,58617939
+112,No action,Found no violation,58615502
+94,No action,Action not necessary,58619153
+62,No action,Found no violation,58620310
+52,Something,Took action,58615496
+94,No action,Action not necessary,58615498
+28,Summons,Summons,58619154
+49,No action,Jurisdiction,58617938
+107,No action,Gone,58614358
+94,No action,Action not necessary,58617937
+48,No action,Found no violation,58615501
+43,Summons,Summons,58621500
+84,No action,Action not necessary,58621503
+25,Something,Took action,58621499
+28,Something,Took action,58621502
+112,No action,Found no violation,58621501
+90,No action,Action not necessary,58622703
 104,Something,Took action,58296790
 106,Something,Took action,58299294
 114,Something,Took action,58299295
