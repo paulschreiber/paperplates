@@ -133,6 +133,8 @@ def process_data(data)
     @resolution_counts[k]['total'] = @resolution_counts[k]['data'].values.sum
     @resolution_counts[k]['percent'] = ((@resolution_counts[k]['data']['Summons'] || 0)/@resolution_counts[k]['total'].to_f * 100).round
   end
+	@no_summonses_exists = @resolution_counts.select{ |precinct, data| precinct.is_a?(Integer) && data["data"]["Summons"] == 10 }.size > 0
+
   write_counts(@resolution_counts)
 
   save_precinct_cache(cache)

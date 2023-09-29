@@ -110,7 +110,9 @@
 	<section class="toggle">
 		<button class="switch" id="btn-per-precinct" disabled="disabled">Specific Precinct</button>
 		<button class="switch" id="btn-compare-precincts">Compare Precincts</button>
+		<%- if @no_summonses_exists -%>
 		<button class="switch" id="btn-no-summonses">Precincts Without Summonses</button>
+		<%- end -%>
 	</section>
 
 	<section id="per-precinct" class="data-section">
@@ -175,6 +177,7 @@
 		</table>
 	</section>
 
+	<%- if @no_summonses_exists -%>
 	<section id="no-summonses" class="hidden data-section">
 		<table>
 			<thead>
@@ -204,6 +207,7 @@
 			</tbody>
 		</table>
 	</section>
+	<%- end -%>
 
 	<section>
 		<p class="quote">
