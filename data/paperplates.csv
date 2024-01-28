@@ -3949,6 +3949,7 @@
 78,Something,Took action,60140053
 1,Something,Took action,60140054
 111,No action,Action not necessary,58993454
+75,Something,Took action,60145247
 104,No action,Found no violation,60141360
 70,No action,Jurisdiction,58997882
 44,Something,Took action,60142638
@@ -3956,37 +3957,36 @@
 113,Something,Took action,60142640
 43,No action,Action not necessary,60142641
 47,No action,Jurisdiction,60142642
-81,No action,Action not necessary,60143906
-61,No action,Found no violation,60143907
-44,Something,Took action,60145245
-81,No action,Action not necessary,60145246
-75,Something,Took action,60145247
-108,No action,Found no violation,60145248
-28,No action,Gone,60145249
 45,Something,Took action,59003975
-88,No action,Action not necessary,60146569
-66,No action,Gone,60146570
-45,Something,Took action,60147806
-81,No action,Action not necessary,60147807
+44,Something,Took action,60145245
 28,Summons,Summons,60147809
-104,No action,Found no violation,60149067
+108,No action,Found no violation,60145248
+81,No action,Action not necessary,60143906
+81,No action,Action not necessary,60147807
+88,No action,Action not necessary,60146569
+45,Something,Took action,60147806
+66,No action,Gone,60146570
+28,No action,Gone,60145249
+61,No action,Found no violation,60143907
+81,No action,Action not necessary,60145246
 50,Something,Took action,60149068
-114,No action,Found no violation,60149069
-94,Something,Took action,60149070
-77,Summons,Summons,60150413
-45,Something,Took action,60150414
-43,No action,Gone,60150415
-52,Something,Took action,60151745
-68,No action,Action not necessary,60151746
-110,No action,Action not necessary,60151747
-34,No action,Action not necessary,60151748
-34,No action,Action not necessary,60151749
-94,No action,Action not necessary,60151750
-102,No action,Gone,60151751
 78,Something,Took action,60153039
-44,No action,Provided information,60153040
+34,No action,Action not necessary,60151749
+45,Something,Took action,60150414
+114,No action,Found no violation,60149069
+52,Something,Took action,60151745
+94,Something,Took action,60149070
+34,No action,Action not necessary,60151748
+43,No action,Gone,60150415
+68,No action,Action not necessary,60151746
+104,No action,Found no violation,60149067
+102,No action,Gone,60151751
 70,No action,Gone,60153041
+44,No action,Provided information,60153040
+110,No action,Action not necessary,60151747
+77,Summons,Summons,60150413
 67,No action,Jurisdiction,59034830
+94,No action,Action not necessary,60151750
 110,No action,Found no violation,59690007
 50,No action,Action not necessary,59691027
 30,No action,Found no violation,59042392
