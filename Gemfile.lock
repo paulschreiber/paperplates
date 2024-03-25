@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     cssminify (1.0.2)
-    csv (3.2.8)
+    csv (3.3.0)
     httparty (0.21.0)
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
