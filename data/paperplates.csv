@@ -5894,11 +5894,7 @@
 121,No action,Found no violation,61132430
 113,No action,Jurisdiction,61132431
 14,Summons,Summons,60537077
-20,No action,Found no violation,61134208
-5,No action,Found no violation,61135052
 19,No action,Found no violation,60540910
-62,Something,Took action,61135921
-120,No action,Action not necessary,61135922
 1,Something,Took action,60097371
 112,Something,Took action,59424334
 94,No action,Action not necessary,59424336
@@ -5906,9 +5902,6 @@
 43,Something,Took action,60543762
 73,No action,Action not necessary,60543763
 115,Summons,Summons,60543764
-121,Something,Report,61137641
-1,No action,Gone,61137642
-106,,,61137643
 34,No action,Gone,59429710
 25,Something,Took action,59429711
 68,Something,Took action,60336287
@@ -5917,9 +5910,7 @@
 108,No action,Gone,60336290
 110,No action,Found no violation,60336291
 66,No action,Found no violation,60336292
-123,Summons,Summons,61139302
-20,No action,Action not necessary,61139303
-52,No action,Found no violation,61139304
+62,Something,Took action,61135921
 52,Something,Took action,59645146
 94,No action,Found no violation,59645147
 94,No action,Action not necessary,59645148
@@ -5928,20 +5919,29 @@
 9,No action,Found no violation,59447155
 9,No action,Action not necessary,59447156
 104,No action,Gone,59447157
+5,No action,Found no violation,61135052
+20,No action,Found no violation,61134208
+123,Summons,Summons,61139302
 62,No action,Gone,59450659
+1,No action,Gone,61137642
 14,Something,Took action,59647837
 34,No action,Jurisdiction,59649175
 106,Something,Took action,59649176
 52,No action,Action not necessary,59649177
 52,Something,Took action,59649178
+121,Something,Report,61137641
 79,No action,Provided information,60109203
 52,Something,Took action,60109204
 104,No action,Found no violation,60552063
 52,Summons,Summons,59651994
+52,No action,Found no violation,61139304
+120,No action,Action not necessary,61135922
 61,No action,Gone,60554679
 113,Something,Took action,60554680
 108,No action,Found no violation,60554681
 45,Something,Took action,60712845
+20,No action,Action not necessary,61139303
+106,,,61137643
 45,Something,Took action,60718932
 33,Summons,Summons,60559981
 104,No action,Gone,60190021
