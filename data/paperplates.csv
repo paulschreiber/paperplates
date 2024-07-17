@@ -1,9 +1,4 @@
 122,No action,Provided information,61462990
-77,Something,Took action,61812558
-76,Something,Took action,61812559
-40,No action,Action not necessary,61812560
-104,No action,Action not necessary,61812561
-45,,,61812598
 47,No action,Action not necessary,61162778
 46,Something,Took action,61163971
 47,Summons,Summons,61167258
@@ -207,37 +202,42 @@
 104,Something,Took action,61804934
 109,No action,Gone,61805542
 115,No action,Gone,61806107
-109,No action,Gone,61807771
-24,No action,Found no violation,61807779
-20,No action,Action not necessary,61807792
-110,Something,Took action,61809739
 76,No action,Action not necessary,61807102
 62,No action,Action not necessary,61807251
 88,No action,Provided information,61807400
 78,Something,Report,61807454
-68,Summons,Summons,61809667
-83,No action,Action not necessary,61811215
-102,No action,Action not necessary,61811216
 106,,,61811217
-43,No action,Jurisdiction,61812514
-81,Summons,Summons,61812515
+24,No action,Found no violation,61807779
+20,No action,Action not necessary,61807792
+68,Summons,Summons,61809667
+102,No action,Action not necessary,61811216
+109,No action,Gone,61807771
+110,Something,Took action,61809739
+83,No action,Action not necessary,61811215
 94,Something,Took action,61813973
-83,No action,Found no violation,61814149
-110,,,61814163
-83,No action,Gone,61815315
-66,No action,Gone,61815424
-49,,,61815425
-66,Summons,Summons,61815523
-61,No action,Provided information,61815524
-111,No action,Found no violation,61816738
-94,No action,Action not necessary,61816935
 94,Summons,Summons,61816957
-104,No action,Provided information,61816990
-68,,,61818313
-102,No action,Action not necessary,61818329
+83,No action,Gone,61815315
+94,No action,Action not necessary,61816935
+40,No action,Action not necessary,61812560
 66,No action,Action not necessary,61818330
+61,No action,Provided information,61815524
+49,,,61815425
+45,,,61812598
+83,No action,Found no violation,61814149
+104,No action,Provided information,61816990
+104,No action,Action not necessary,61812561
+81,Summons,Summons,61812515
+102,No action,Action not necessary,61818329
+66,No action,Gone,61815424
+77,Something,Took action,61812558
+68,,,61818313
+43,No action,Jurisdiction,61812514
+111,No action,Found no violation,61816738
+76,Something,Took action,61812559
 43,No action,Contact Info,61818331
 104,Summons,Summons,61708610
+66,Summons,Summons,61815523
+110,,,61814163
 113,No action,Jurisdiction,61565980
 48,Something,Took action,61637586
 71,Summons,Summons,61170725
