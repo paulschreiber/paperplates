@@ -2914,43 +2914,43 @@
 9,No action,Gone,62223236
 77,No action,Gone,62224458
 24,No action,Found no violation,62225551
-110,Something,Took action,62225915
-47,,,62225938
-115,Something,Took action,62225956
-114,No action,Found no violation,62225974
-24,Summons,Summons,62226016
 81,Something,Took action,62225589
 9,No action,Found no violation,62225590
-68,No action,Action not necessary,62227106
-84,No action,Gone,62227203
 121,Something,Took action,62227300
-68,Something,Took action,62228231
-75,No action,Action not necessary,62228329
-122,Something,Report,62228385
+110,Something,Took action,62225915
+114,No action,Found no violation,62225974
 47,,,62228386
-104,No action,Action not necessary,62229225
-104,,,62229226
 104,,,62229227
-45,,,62229362
-84,No action,Gone,62230260
-61,No action,Gone,62230261
-45,Something,Took action,62230262
-114,No action,Found no violation,62230398
-110,No action,Found no violation,62230415
-88,Summons,Summons,62230430
-84,Something,Took action,62231329
-114,Summons,Summons,62231330
-121,,,62231332
-107,,,62231403
-84,No action,Action not necessary,62231444
-61,No action,Found no violation,62231445
-61,No action,Gone,62231452
-110,No action,Found no violation,62232366
-24,Something,Took action,62232482
-84,Something,Took action,62233443
-105,No action,Action not necessary,62233444
+75,No action,Action not necessary,62228329
+47,,,62225938
+122,Something,Report,62228385
+84,No action,Gone,62227203
+24,Summons,Summons,62226016
+68,No action,Action not necessary,62227106
+104,,,62229226
+104,No action,Action not necessary,62229225
+68,Something,Took action,62228231
+115,Something,Took action,62225956
 110,No action,Found no violation,62233554
+84,No action,Action not necessary,62231444
+121,,,62231332
+84,Something,Took action,62231329
+84,Something,Took action,62233443
+45,,,62229362
+114,No action,Found no violation,62230398
+88,Summons,Summons,62230430
 110,No action,Found no violation,62233555
+61,No action,Found no violation,62231445
+107,,,62231403
+105,No action,Action not necessary,62233444
+114,Summons,Summons,62231330
+110,No action,Found no violation,62232366
+84,No action,Gone,62230260
+24,Something,Took action,62232482
+110,No action,Found no violation,62230415
+61,No action,Gone,62230261
+61,No action,Gone,62231452
+45,Something,Took action,62230262
 75,Summons,Summons,54702786
 32,Something,Took action,54704086
 88,No action,Found no violation,54705423
