@@ -3354,38 +3354,38 @@
 115,No action,Found no violation,62375176
 115,No action,Found no violation,62375184
 28,No action,Found no violation,62375265
+68,No action,Gone,62375871
+10,No action,Action not necessary,62376374
 122,Summons,Summons,62376338
 47,No action,Jurisdiction,62376339
-10,No action,Action not necessary,62376374
-68,No action,Gone,62375871
 44,Something,Took action,62377740
-114,No action,Gone,62377887
-77,No action,Action not necessary,62377888
-45,,,62379172
-47,No action,Jurisdiction,62379180
-50,No action,Gone,62379212
-43,No action,Found no violation,62379213
-105,No action,Action not necessary,62380536
-24,No action,Action not necessary,62380561
-68,No action,Action not necessary,62380563
+115,No action,Action not necessary,62383555
 110,,,62380564
+50,No action,Gone,62383557
+104,Something,Took action,62382105
+24,Summons,Summons,62383446
+111,Summons,Summons,62384925
+105,No action,Action not necessary,62380536
+47,No action,Jurisdiction,62379180
+77,No action,Action not necessary,62377888
 45,,,62380565
-104,Something,Took action,62381942
-114,Something,Took action,62381943
+24,No action,Action not necessary,62380561
 81,Summons,Summons,62381944
+114,No action,Gone,62377887
+103,No action,Gone,62383369
+104,Something,Took action,62381942
+50,No action,Gone,62379212
+114,Something,Took action,62381943
+45,,,62381993
+72,No action,Found no violation,62383556
+43,No action,Found no violation,62379213
+90,No action,Action not necessary,62382104
+68,No action,Action not necessary,62380563
 49,No action,Found no violation,62381991
 106,,,62381992
-45,,,62381993
-90,No action,Action not necessary,62382104
-104,Something,Took action,62382105
-103,No action,Gone,62383369
-24,Summons,Summons,62383446
-115,No action,Action not necessary,62383555
-72,No action,Found no violation,62383556
-50,No action,Gone,62383557
-111,Summons,Summons,62384925
-61,No action,Found no violation,62386155
+45,,,62379172
 10,No action,Gone,62386298
+61,No action,Found no violation,62386155
 107,No action,Found no violation,62386421
 75,Summons,Summons,54702786
 32,Something,Took action,54704086
