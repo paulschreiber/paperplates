@@ -6,36 +6,36 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: '15 * * * *'
+    - cron: "15 * * * *"
 
 jobs:
   scheduled:
     runs-on: ubuntu-latest
     steps:
-    - name: Setup timezone
-      uses: zcong1993/setup-timezone@master
-      with:
-        timezone: America/New_York
-    - name: Check out this repo
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
-    - name: Set up Ruby 3.2.2
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 3.2.2
-        bundler-cache: true
-    - name: Fetch latest vaccination sites
-      run: bundle exec ruby get-data --fetch
-      env:
-        DEBUG_LOG: ${{ secrets.DEBUG_LOG }}
-    - name: Commit and push if 311 data changed
-      run: |-
-        if ! git diff --quiet; then
-          git config user.name "Automated"
-          git config user.email "actions@users.noreply.github.com"
-          git add -A
-          timestamp=$(date -u)
-          git commit -m "Latest data: ${timestamp}" || exit 0
-          git push
-        fi
+      - name: Setup timezone
+        uses: zcong1993/setup-timezone@master
+        with:
+          timezone: America/New_York
+      - name: Check out this repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Set up Ruby 3.2.3
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2.3
+          bundler-cache: true
+      - name: Fetch latest vaccination sites
+        run: bundle exec ruby get-data --fetch
+        env:
+          DEBUG_LOG: ${{ secrets.DEBUG_LOG }}
+      - name: Commit and push if 311 data changed
+        run: |-
+          if ! git diff --quiet; then
+            git config user.name "Automated"
+            git config user.email "actions@users.noreply.github.com"
+            git add -A
+            timestamp=$(date -u)
+            git commit -m "Latest data: ${timestamp}" || exit 0
+            git push
+          fi
