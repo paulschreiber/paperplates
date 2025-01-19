@@ -809,11 +809,11 @@
 47,No action,Jurisdiction,57765986
 109,No action,Jurisdiction,57758152
 113,No action,Jurisdiction,57741445
-47,No action,Jurisdiction,57725786
 47,No action,Jurisdiction,57728927
 47,No action,Jurisdiction,57726905
 47,No action,Jurisdiction,57726879
 47,No action,Jurisdiction,57731865
+47,No action,Jurisdiction,57725786
 102,No action,Jurisdiction,57731851
 47,No action,Jurisdiction,57716141
 47,No action,Jurisdiction,57699518
@@ -6075,9 +6075,9 @@
 14,No action,Found no violation,57547744
 62,No action,Found no violation,57542905
 62,No action,Found no violation,57545318
+62,No action,Found no violation,57542048
 62,No action,Found no violation,57545678
 62,No action,Found no violation,57573271
-62,No action,Found no violation,57542048
 62,No action,Found no violation,57571949
 34,No action,Found no violation,57541752
 48,No action,Found no violation,57539714
@@ -7288,10 +7288,10 @@
 61,No action,Found no violation,56246943
 46,No action,Found no violation,56258481
 46,No action,Found no violation,56252791
+46,No action,Found no violation,56255931
+46,No action,Found no violation,56246982
 46,No action,Found no violation,56247401
 46,No action,Found no violation,56249033
-46,No action,Found no violation,56246982
-46,No action,Found no violation,56255931
 13,No action,Found no violation,56182800
 13,No action,Found no violation,56178491
 13,No action,Found no violation,56178469
@@ -13849,8 +13849,8 @@
 109,Something,Took action,57217300
 30,Something,Took action,57213931
 13,Something,Took action,57219706
-13,Something,Took action,57221195
 13,Something,Took action,57217478
+13,Something,Took action,57221195
 13,Something,Took action,57217136
 13,Something,Took action,57217320
 13,Something,Took action,57217512
@@ -15216,8 +15216,8 @@
 109,Something,Took action,55929914
 120,Something,Took action,55928871
 109,Something,Took action,55925318
-66,Something,Took action,55919302
 111,Something,Took action,55921661
+66,Something,Took action,55919302
 33,Something,Took action,55925314
 112,Something,Took action,55922860
 32,Something,Took action,55921656
@@ -20260,8 +20260,8 @@
 30,No action,Action not necessary,57729872
 24,No action,Action not necessary,57727861
 88,No action,Action not necessary,57725836
-78,No action,Action not necessary,57731846
 78,No action,Action not necessary,57731813
+78,No action,Action not necessary,57731846
 106,No action,Action not necessary,57730859
 94,No action,Action not necessary,57726861
 33,No action,Action not necessary,57727859
