@@ -12,7 +12,7 @@ GEM
     mini_mime (1.1.5)
     multi_xml (0.7.2)
       bigdecimal (~> 3.1)
-    optparse (0.6.0)
+    optparse (0.8.0)
 
 PLATFORMS
   arm64-darwin-22
