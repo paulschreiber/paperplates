@@ -8,7 +8,7 @@ GEM
       csv
       mini_mime (>= 1.0.0)
       multi_xml (>= 0.5.2)
-    json (2.15.2)
+    json (2.16.0)
     mini_mime (1.1.5)
     multi_xml (0.7.2)
       bigdecimal (~> 3.1)
@@ -16,6 +16,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
+  arm64-darwin-25
   x86_64-linux
 
 DEPENDENCIES
@@ -26,4 +27,4 @@ DEPENDENCIES
   optparse
 
 BUNDLED WITH
-   2.4.20
+   2.6.9
