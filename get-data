@@ -151,7 +151,7 @@ def process_data(data) # rubocop:disable Metrics/PerceivedComplexity
       ((@resolution_counts[k]['data']['Summons'] || 0) / @resolution_counts[k]['total'].to_f * 100).round
   end
   @no_summonses_exists = @resolution_counts.select do |precinct, data|
-    precinct.is_a?(Integer) && data['data']['Summons'].zero?
+    precinct.is_a?(Integer) && !data['data']['Summons'].nil? && data['data']['Summons'].zero?
   end.size.positive?
 
   write_counts(@resolution_counts)
