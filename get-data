@@ -121,7 +121,7 @@ def write_counts(data)
   File.write(COUNTS_FILE, JSON.generate(data))
 end
 
-def process_data(data)
+def process_data(data) # rubocop:disable Metrics/PerceivedComplexity
   cache = load_precinct_cache
   @resolution_counts = {}
 
@@ -135,21 +135,24 @@ def process_data(data)
       csv << [sector.to_i, resolution_summary, resolution, item[UNIQUE_KEY_INDEX]] if sector != -1
       next if resolution.nil?
 
-      @resolution_counts['all'] = {'data' => {}} unless @resolution_counts.key?('all')
+      @resolution_counts['all'] = { 'data' => {} } unless @resolution_counts.key?('all')
       @resolution_counts['all']['data'][resolution] = 0 unless @resolution_counts['all']['data'].key?(resolution)
-      @resolution_counts[precinct] = {'data' => {}} unless @resolution_counts.key?(precinct)
+      @resolution_counts[precinct] = { 'data' => {} } unless @resolution_counts.key?(precinct)
       @resolution_counts[precinct]['data'][resolution] = 0 unless @resolution_counts[precinct]['data'].key?(resolution)
       @resolution_counts['all']['data'][resolution] += 1
       @resolution_counts[precinct]['data'][resolution] += 1
     end
   end
 
-  @resolution_counts.keys.each do |k|
+  @resolution_counts.each_key do |k|
     @resolution_counts[k]['data'] = @resolution_counts[k]['data'].sort_by { |_key, value| value }.reverse.to_h
     @resolution_counts[k]['total'] = @resolution_counts[k]['data'].values.sum
-    @resolution_counts[k]['percent'] = ((@resolution_counts[k]['data']['Summons'] || 0)/@resolution_counts[k]['total'].to_f * 100).round
+    @resolution_counts[k]['percent'] =
+      ((@resolution_counts[k]['data']['Summons'] || 0) / @resolution_counts[k]['total'].to_f * 100).round
   end
-	@no_summonses_exists = @resolution_counts.select{ |precinct, data| precinct.is_a?(Integer) && data["data"]["Summons"] == 0 }.size > 0
+  @no_summonses_exists = @resolution_counts.select do |precinct, data|
+    precinct.is_a?(Integer) && data['data']['Summons'].zero?
+  end.size.positive?
 
   write_counts(@resolution_counts)
 
@@ -158,7 +161,7 @@ def process_data(data)
   template = ERB.new(File.read('template.html.erb'), trim_mode: '-')
   @last_updated = Time.new.strftime('%A, %B %e, %Y at %l:%M %p %Z')
   @total_complaints = 0
-  @resolution_counts.keys.reject{|key| key == "all"}.each do |key|
+  @resolution_counts.keys.reject { |key| key == 'all' }.each do |key|
     @total_complaints += @resolution_counts[key]['data'].values.sum
   end
   @total_summonses = @resolution_counts['all']['data']['Summons']
