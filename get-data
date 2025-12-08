@@ -128,7 +128,7 @@ def process_data(data) # rubocop:disable Metrics/PerceivedComplexity
   CSV.open(RESOLUTION_SUMMARY_FILE, 'w') do |csv|
     data['data'].each do |item|
       sector = get_precinct_data(item[ADDRESS_INDEX], item[ZIP_INDEX], cache)
-      precinct = sector == -1 ? 'Unknown' : sector.to_i
+      precinct = [-1, nil].include?(sector) ? 'Unknown' : sector.to_i
 
       resolution = RESOLUTION_MAP.key?(item[RESOLUTION_INDEX]) ? RESOLUTION_MAP[item[RESOLUTION_INDEX]] : item[RESOLUTION_INDEX] # rubocop:disable Layout/LineLength
       resolution_summary = RESOLUTION_SUMMARY_MAP.key?(item[RESOLUTION_INDEX]) ? RESOLUTION_SUMMARY_MAP[item[RESOLUTION_INDEX]] : item[RESOLUTION_INDEX] # rubocop:disable Layout/LineLength
