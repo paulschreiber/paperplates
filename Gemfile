@@ -9,3 +9,7 @@ gem 'csv'
 gem 'httparty'
 gem 'json'
 gem 'optparse'
+
+group :development do
+  gem 'rubocop', require: false
+end
