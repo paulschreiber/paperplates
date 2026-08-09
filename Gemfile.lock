@@ -4,7 +4,7 @@ GEM
     ast (2.4.3)
     bigdecimal (4.0.1)
     cssminify (1.0.2)
-    csv (3.3.5)
+    csv (3.3.6)
     httparty (0.24.2)
       csv
       mini_mime (>= 1.0.0)
