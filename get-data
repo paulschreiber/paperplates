@@ -168,7 +168,7 @@ def process_data(data) # rubocop:disable Metrics/PerceivedComplexity
   save_precinct_cache(cache)
 
   template = ERB.new(File.read('template.html.erb'), trim_mode: '-')
-  @last_updated = Time.new.strftime('%A, %B %e, %Y at %l:%M %p %Z')
+  @last_updated = Time.now.strftime('%A, %B %e, %Y at %l:%M %p %Z')
   @total_complaints = 0
   @resolution_counts.keys.reject { |key| key == 'all' }.each do |key|
     @total_complaints += @resolution_counts[key]['data'].values.sum
