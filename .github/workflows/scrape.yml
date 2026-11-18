@@ -11,11 +11,9 @@ on:
 jobs:
   scheduled:
     runs-on: ubuntu-latest
+    env:
+      TZ: America/New_York
     steps:
-      - name: Setup timezone
-        uses: zcong1993/setup-timezone@master
-        with:
-          timezone: America/New_York
       - name: Check out this repo
         uses: actions/checkout@v7
       - name: Set up Ruby
